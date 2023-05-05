@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+.navLinks li {
+  padding: 0 12px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: 0.15px;
+}
+.upNav li {
+  padding: 6px 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+.navBtn {
+  min-height: 48px;
+  min-width: 120px;
+  background-color: #f03023;
+  color: white;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.crouselSectionImage{
+    position: relative;
+    right: 0%;
+    bottom: 30%;
+    z-index: 1;
+}
