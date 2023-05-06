@@ -20,12 +20,12 @@ h2 {
   font-size: 56px;
   line-height: 64px;
 }
-h5{
-  font-family: 'Lato';
-font-style: normal;
-font-weight: 900;
-font-size: 24px;
-line-height: 32px;
+h5 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 h6 {
@@ -37,12 +37,19 @@ h6 {
   align-self: stretch;
 }
 
-p{
-  font-family: 'Lato';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sm {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
 }
 .actionBtn {
   color: white;

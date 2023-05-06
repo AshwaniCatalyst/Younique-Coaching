@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 // import CrouselSection from '../components/crouselSection'
 import HeroSection from '../components/HeroSection'
 import OurServices from '../components/OurServices'
+import ClientReviewSection from '../components/ClientReviewSection'
 
 const index = () => {
   return (
@@ -11,6 +12,7 @@ const index = () => {
    <Navbar/>
    <HeroSection/>
    <OurServices/>
+   <ClientReviewSection/>
    {/* <CrouselSection/> */}
    <Footer/>
     </>
