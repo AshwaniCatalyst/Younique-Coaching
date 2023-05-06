@@ -3,7 +3,6 @@ import commaIcon from "../images/commaIcon.svg";
 import arrowL from "../images/Arrowleft.svg";
 import arrowR from "../images/Arrowright.svg";
 import divider from "../images/divider.svg";
-import crsl1 from "../images/crsl-1.svg";
 const CrouselSection = () => {
   return (
     <>
