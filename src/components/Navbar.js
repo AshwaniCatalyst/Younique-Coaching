@@ -55,7 +55,7 @@ const Navbar = () => {
                 <div className=" pl-6 pr-6">Sign In</div>
               </li>
               <li>
-                <Button variant="contained" sx={{}} className="navBtn">
+                <Button variant="contained" sx={{ bgcolor:'#F03023'}} className="navBtn">
                   Sign Up
                 </Button>
               </li>

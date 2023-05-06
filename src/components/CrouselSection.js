@@ -8,9 +8,9 @@ const CrouselSection = () => {
   return (
     <>
       <div className="grid grid-flow-row grid-cols-3">
-        <div className="grid col-span-2 bg-[#F9F3DC] pt-[100px] pb-[100px] pl-[174px] pr-[250px] grid-rows-4 gap-6">
+        <div className="grid col-span-2 bg-[#F9F3DC] pt-[100px] pb-[100px] pl-[174px] pr-[250px]  gap-3">
           <h1>What People Say About Book</h1>
-          <div>Sinead Connelly</div>
+          <p className="font-bold text-[#000000]">Sinead Connelly</p>
           <div>Co-founder and Director, Lotus People</div>
           <div>
             <img src={commaIcon} alt="commaIcon" />
