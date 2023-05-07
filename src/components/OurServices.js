@@ -7,7 +7,7 @@ const OurServices = () => {
   return (
     <>
      <div className='bg-white pt-[150px]'>
-      <div className='tiltedContainer '> 
+      <div className='tiltedContainer bg-[#F5F5F5] '> 
       <div className=' pt-[128px] pb-[100px] pl-[64px] pr-[64px] justify-center  flex-col flex gap-16'>
         <div>
         <h2 className=' ml-[176px] pl-[34px] border-l-4 border-black'>Our <br/><span className='font-bold'>Services</span></h2>

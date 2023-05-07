@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import OurServices from '../components/OurServices'
 import ClientReviewSection from '../components/ClientReviewSection'
+import VideoSection from '../components/VideoSection'
 
 const index = () => {
   return (
@@ -13,6 +14,7 @@ const index = () => {
    <HeroSection/>
    <OurServices/>
    <ClientReviewSection/>
+   <VideoSection/>
    {/* <CrouselSection/> */}
    <Footer/>
     </>

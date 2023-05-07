@@ -8,7 +8,7 @@ import brand2 from '../images/Mask group-1.svg'
 const Footer = () => {
   return (
     <>
-      <div className="pl-[64px] pr-[64px] pt-[80px] pb-[30px] flex flex-col  justify-center bg-black">
+      <div className="pl-[64px] pr-[64px] pt-[80px] pb-[30px] flex flex-col -z-10 justify-center bg-black">
         < div className="grid grid-cols-6 pb-[60px] content-center gap-8">
           <div className="grid grid-rows-2">
             <img src={footerLogo} alt="logo" />
