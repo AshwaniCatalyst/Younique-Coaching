@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar'
 // import Footer from '../components/Footer'
 // import CrouselSection from '../components/crouselSection'
 import HeroSection from '../components/HeroSection'
-// import OurServices from '../components/OurServices'
-// import ClientReviewSection from '../components/ClientReviewSection'
+import OurServices from '../components/OurServices'
+import ClientReviewSection from '../components/ClientReviewSection'
 // import VideoSection from '../components/VideoSection'
 
 const index = () => {
@@ -12,8 +12,8 @@ const index = () => {
     <>
    <Navbar/>
    <HeroSection/>
-   {/* <OurServices/> */}
-   {/* <ClientReviewSection/> */}
+   <OurServices/>
+   <ClientReviewSection/>
    {/* <VideoSection/> */}
    {/* <CrouselSection/> */}
    {/* <Footer/> */}

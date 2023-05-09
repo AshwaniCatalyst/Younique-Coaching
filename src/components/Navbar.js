@@ -35,7 +35,7 @@ const Navbar = () => {
             <ul className="row1 items-center justify-end navLinks">
               <li>
                 <IconButton>
-                  <img src={homeIcon} alt="home" />
+                  <img src={homeIcon} className="max-h-[44px] w-auto" alt="home" />
                 </IconButton>
               </li>
               <li>About</li>
