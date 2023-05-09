@@ -7,62 +7,65 @@ import cartIcon from "../images/CartIcon.svg";
 const Navbar = () => {
   return (
     <>
-      <AppBar
-        sx={{ position: "static"}}
-        className="  grid grid-cols-2"
+      <div
+        
+        className="hidden  lg:block bg-[#000000] text-[#ffffff]"
       >
-        <div className="pr-[64px] pt-[6px] pb-[6px] bg-black">
+        <div className="container">
+        <div className="pr-[64px] pt-[6px] pb-[6px] ">
           <ul className=" flex justify-end upNav ">
             <li>+ 61 448 173 307</li>
-            <li className="border-l-2 border-r-2">
+            <li className="border">
               sophie@youniquecoaching.com.au
             </li>
-            <li>Request a Demo</li>
+            <li >Request a Demo</li>
           </ul>
         </div>
-      </AppBar>
-      <AppBar
-        sx={{ bgcolor: "#fff", position: "static" }}
-        className="static pl-[64px] pr-[64px] pt-[18px] pb-[18px] flex items-center"
+        </div>
+      </div>
+      <div
+        className="static pl-[64px] pr-[64px] pt-[18px] pb-[18px]  " style={{borderBottom: '1px solid #E6E6E6'}}
       >
-        <div className="grid grid-cols-3 w-full">
-          <div>
+        <div className="container">
+        <div className="row1 items-center">
+          <div className="col-2">
             <img src={navLogo} alt="logo" />
           </div>
-          <div className="col-span-2 ">
-            <ul className="flex text-black items-center justify-end navLinks uppercase ">
+          <div className="col-10 row items-end ">
+            <ul className="row1 items-center justify-end navLinks">
               <li>
                 <IconButton>
                   <img src={homeIcon} alt="home" />
                 </IconButton>
               </li>
               <li>About</li>
-              <li className="flex gap-[6px] ">
+              <li className="flex items-center gap-[6px] ">
                 Services <img src={chevron} alt="Chevron" />{" "}
               </li>
-              <li className="flex gap-[6px] ">
+              <li className="flex items-center  gap-[6px] ">
                 Resources <img src={chevron} alt="Chevron" />
               </li>
               <li>Testimonials</li>
               <li>My Webinars</li>
               <li>Contact Us</li>
-              <li>
-                <div className="flex gap-[10px] border-l-2 border-r-2 pl-6 pr-6">
-                  <img src={cartIcon} alt="cart" /> 0{" "}
-                </div>
+              <li className="flex gap-2 pl-[25px] pr-[25px] border">
+                
+                  <img src={cartIcon} alt="cart" /> 0
+                
               </li>
               <li>
                 <div className=" pl-6 pr-6">Sign In</div>
               </li>
               <li>
-                <Button variant="contained" sx={{ bgcolor:'#F03023'}} className="navBtn">
+                <button variant="contained" sx={{ bgcolor:'#F03023'}} className="navBtn">
                   Sign Up
-                </Button>
+                </button>
               </li>
             </ul>
           </div>
         </div>
-      </AppBar>
+        </div>
+      </div>
     </>
   );
 };

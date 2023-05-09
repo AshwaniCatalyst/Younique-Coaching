@@ -3,71 +3,261 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
-h1 {
+:root {
+  --orange: #f03023;
+  --black: #000000;
+  --grey: #444444;
+  --white: #ffffff;
+  --bg-pink: #f9f3dc;
+  --bg-blue: #f5f5f5;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .col-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .col-2 {
+    -ms-flex: 0 0 16.66%;
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+  }
+  .col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .col-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .navContainer {
+  max-width: 1440px;
+  padding: 16px 64px;
+} */
+
+.navText,
+.textLinkLg,
+.textLinkSm,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.lgText,
+.mdText,
+.smText,
+.xsText,
+.quotesText {
   font-family: "Lato";
   font-style: normal;
+}
+
+.navText {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+}
+
+/* .textLinkLg {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+.textLinkSm {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration-line: underline;
+} */
+
+h1 {
   font-weight: 300;
   font-size: 64px;
   line-height: 72px;
-  align-self: stretch;
-  z-index: 10;
 }
 
 h2 {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 300;
   font-size: 56px;
   line-height: 64px;
 }
 
-h3{
-  font-family: 'Lato';
-font-style: normal;
-font-weight: 900;
-font-size: 40px;
-line-height: 48px;
+h3 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
 }
 
 h5 {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
 }
 
-h6 {
-  font-family: "Lato";
-  font-style: normal;
+.lgText {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  align-self: stretch;
 }
 
-p {
-  font-family: "Lato";
-  font-style: normal;
+/* p */
+.mdText {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
-.sm {
-  font-family: "Lato";
-  font-style: normal;
+/* sm */
+.smText {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
 }
+
+.xsText {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.quotesText {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
 .actionBtn {
+  max-width:255px;
   color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 18px 44px 18px 48px;
   background: #f03023;
-  transition: 0.5s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   font-family: "Lato";
   font-style: normal;
   font-weight: 600;
@@ -75,15 +265,25 @@ p {
   line-height: 28px;
   text-transform: uppercase;
 }
-.actionBtn:hover img {
-  opacity: 1;
-  transform: translateX(50%);
 
-  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+.border{
+  border-left: 1px solid #444444;
+  border-right: 1px solid #444444;
+}
+
+.actionBtn:hover{
+  background: #000000;
+}
+
+.actionBtn img{
+  transition: 0.3s all ease-in-out;
+}
+.actionBtn:hover img {
+  transform: translateX(50%);
 }
 
 .navLinks li {
-  padding: 0 12px;
+  margin: 0 12px;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -105,7 +305,30 @@ p {
   background-color: #f03023;
   color: white;
   box-shadow: none;
+  transition: 0.4s all ease-in-out;
   border-radius: 0;
+}
+
+.navBtn:hover{
+  background: #000000;
+}
+
+.heroSection{
+  position: relative;
+  /* display: flex; */
+  background: #F9F3DC;
+  padding: 0 64px;
+}
+
+.heroSection::before{
+  content: "";
+  background: #FFFFFF;
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .crouselSectionImage {
@@ -120,6 +343,3 @@ p {
   clip-path: polygon(0 1%, 100% 7%, 100% 100%, 0% 100%);
 }
 
-.tiltedContainer-2{
-  clip-path: polygon(0 3%, 100% 8%, 100% 100%, 0 100%);
-}
