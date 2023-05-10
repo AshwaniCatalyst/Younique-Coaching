@@ -15,59 +15,80 @@ const OurServices = () => {
               </h2>
             </div>
             <div className="row1 p-auto">
-              <div className="col-3 items-center">
-                <div className="max-w-[304px] ">
+              <div className="col-3 items-center ">
+                <div className="max-w-[304px] serviceSectionCard">
+                <div className="serviceSectionImageWrapper">
                   <img src={crd1} alt="card-Image" />
+                  </div>
                   <h5 className="pt-[16px] pb-[8px]">MasterClass</h5>
                   <p className="min-h-[160px] text-[#444444]">
                     Workshops where you can learn the tips and tools to be
                     successful
                   </p>
+                
+                <a href="#" className="hover:text-[#000000] underline font-semibold  text-[#F03023]">
+                  
+                    Learn More
+                  
+                </a>
                 </div>
-                <p className=" underline font-semibold  text-[#F03023]">
-                  Learn MORE
-                </p>
               </div>
-              <div className="col-3">
-                <div className="max-w-[304px] ">
+              <div className="col-3 ">
+                <div className="max-w-[304px] serviceSectionCard ">
+                <div className="serviceSectionImageWrapper">
                   <img src={crd2} alt="card-Image" />
-                  <h5 className="pt-[16px] pb-[8px]">Coaching/Mentoring</h5>
+                  </div>
+                  <h5 className="pt-[16px] pb-[8px] ">Coaching / Mentoring</h5>
                   <p className="min-h-[160px] text-[#444444]">
                     One on one coaching to accelerate and cement your insights
                     and learnings for rapid results
                   </p>
+                
+                <a href="#" className="hover:text-[#000000] underline font-semibold  text-[#F03023]">
+                  {" "}
+                  
+                    Learn More
+                  
+                </a>
                 </div>
-                <p className="font-semibold underline text-[#F03023]">
-                  Learn MORE
-                </p>
               </div>
-              <div className="col-3">
-                <div className="max-w-[304px] ">
+              <div className="col-3 ">
+                <div className="max-w-[304px] serviceSectionCard ">
+                  <div className="serviceSectionImageWrapper">
                   <img src={crd3} alt="card-Image" />
+                  </div>
                   <h5 className="pt-[16px] pb-[8px]">Training</h5>
                   <p className=" min-h-[160px] text-[#444444]">
                     Group bespoke training delivered via face-to-face or
                     virtually
                   </p>
-                  <p className=" underline font-semibold text-[#F03023]">
-                    Learn MORE
-                  </p>
+                  <a href="#" className="hover:text-[#000000] underline font-semibold  text-[#F03023]">
+                    
+                      Learn More
+                    
+                  </a>
                 </div>
               </div>
-              <div className="col-3">
-                <div className="max-w-[304px] ">
+              <div className="col-3 ">
+                <div className="max-w-[304px] serviceSectionCard ">
+                <div className="serviceSectionImageWrapper">
                   <img src={crd4} alt="card-Image" />
+                  </div>
                   <h5 className="pt-[16px] pb-[8px]">Advisory </h5>
-                  <p className="min-h-[160px] text-[#444444]">
+                  <p className="min-h-[160px] text-[#444444] ">
                     You may be a start up or an established company looking for
                     particular expertise on your Board or you may want someone
                     to bounce ideas off as running a business can be a lonely
                     affair
                   </p>
+                
+                <a href="#" className="hover:text-[#000000] underline font-semibold  text-[#F03023]">
+                
+                 
+                    Learn More
+                 
+                </a>
                 </div>
-                <p className=" underline font-semibold text-[#F03023]">
-                  Learn MORE
-                </p>
               </div>
             </div>
           </div>

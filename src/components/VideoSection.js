@@ -4,35 +4,34 @@ import VideoInfo from "../images/VideoInfo.svg";
 const VideoSection = () => {
   return (
     <>
-      <div className="tiltedContainer before:bg-[#F03023] after:bg-[#F03023] after:h-[calc(100%)] ">
+      <div className="tiltedContainer before:bg-[#F03023] after:bg-[#F03023] after:h-[calc(100%-152px)] ">
         <div className="container">
-          <div className="row1 flex-col text-white">
-            <div className="pb-[30px] ">
-              <h2 className="title-border before:bg-[#FFFFFF]">
-                Hear From
-                <span className="font-bold"> Sophie Robertson</span>
-              </h2>
-            </div>
-            <div className="row1">
-              <div className="col-4 bg-black">
-                
+          <div className="row1 text-white pt-[120px]">
+            <div className="col-4 flex flex-col items-center justify-end bg-black">hello</div>
+            <div className="col-8  items-start">
+              <div className="pb-[40px] max-w-[481px] ">
+                <h2 className="title-border ml-0 before:bg-[#FFFFFF]">
+                  Hear From
+                  <span className="font-bold"> Sophie Robertson</span>
+                </h2>
               </div>
-              <div className="col-8 bg-slate-600">
-                <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/800973371?h=3be40b6c38&title=0&byline=0&portrait=0"
-                    style={{
-                      position: "absolute",
-                      top: "0",
-                      left: "0",
-                      width: "100%",
-                      height: "100%",
-                    }}
-                    frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+              <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <iframe
+                  src="https://player.vimeo.com/video/800973371?h=3be40b6c38&title=0&byline=0&portrait=0"
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    left: "0",
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div>
+              <img src={VideoInfo} className="border" alt='Video Info'/>
               </div>
             </div>
           </div>
