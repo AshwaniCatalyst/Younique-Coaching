@@ -4,18 +4,35 @@ import VideoInfo from "../images/VideoInfo.svg";
 const VideoSection = () => {
   return (
     <>
-      <div className="tiltedContainer before:bg-[#F03023] after:bg-[#F03023] after:h-[calc(100%-152px)] ">
+      <div className="tiltedContainer before:bg-[#F03023] after:bg-[#F03023] after:min-h-[calc(100%-370px)] ">
         <div className="container">
           <div className="row1 text-white pt-[120px]">
-            <div className="col-4 flex flex-col items-center justify-end bg-black">hello</div>
-            <div className="col-8  items-start">
+            <div className="col-4"></div>
+            <div className="col-8">
               <div className="pb-[40px] max-w-[481px] ">
                 <h2 className="title-border ml-0 before:bg-[#FFFFFF]">
                   Hear From
                   <span className="font-bold"> Sophie Robertson</span>
                 </h2>
               </div>
-              <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+            </div>
+          </div>
+          <div className="row1 text-white items-center">
+            <div className="col-4 flex flex-col items-center justify-end">
+              <div className="flex flex-col max-w-[516px]  gap-16">
+                <div className="flex flex-col text-white">
+                  <h3>Recruitment Advisor and Coach</h3>
+                  <h6>
+                    I’m here to help you scale your business with powerful
+                    strategies so you can make more while doing less.
+                  </h6>
+                </div>
+                <p className="underline font-semibold text-white">
+                  Read More About Sophie
+                </p>
+              </div>
+            </div>
+            <div className="col-8 " style={{ padding: "36.25% 0 0 0", position: "relative" }}>
                 <iframe
                   src="https://player.vimeo.com/video/800973371?h=3be40b6c38&title=0&byline=0&portrait=0"
                   style={{
@@ -29,12 +46,14 @@ const VideoSection = () => {
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowfullscreen
                 ></iframe>
-              </div>
-              <div>
-              <img src={VideoInfo} className="border" alt='Video Info'/>
-              </div>
             </div>
           </div>
+          <div className="row1">
+          <div className="col-4"></div>
+          <div className="col-8 max-w-[864px] h-auto">
+            <img src={VideoInfo} className="" alt="Video Info" />
+          </div>
+        </div>
         </div>
       </div>
     </>
