@@ -13,7 +13,7 @@ const ClientReviewSection = () => {
       <div className="container items-center">
         <div className="row1 flex-col items-center">
           <div className="pb-[30px] ">
-            <h2 className=" title-border">
+            <h2 className=" title-border before:bg-[#000000]">
               What Our Clients Say About
               <span className="font-bold"> Younique Coaching</span>
             </h2>

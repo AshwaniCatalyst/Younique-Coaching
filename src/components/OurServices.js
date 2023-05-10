@@ -6,11 +6,11 @@ import crd4 from "../images/c4.svg";
 const OurServices = () => {
   return (
     <>
-      <div className="tiltedContainer mb-[160px]">
+      <div className="tiltedContainer before:bg-[#F5F5F5] after:bg-[#F5F5F5] after:h-[calc(100%-120px)] mb-[160px]">
         <div className="container">
           <div className="row1 flex-col md:items-start sm:items-center ">
             <div className="pb-[30px] ">
-              <h2 className="title-border">
+              <h2 className="title-border before:bg-[#000000]">
                 Our <span className="font-bold">Services</span>
               </h2>
             </div>

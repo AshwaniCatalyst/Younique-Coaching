@@ -303,7 +303,7 @@ h5 {
 
 .heroSection{
   position: relative;
-  padding: 0 64px;
+  /* padding: 0 64px; */
 }
 
 .heroSection::before{
@@ -335,7 +335,7 @@ h5 {
   left: 0;
   right: 0;
   top: 50px;
-  background: #F5F5F5;
+  /* background: #F5F5F5; */
   transform: rotate(3deg) scale(1.5,1);
 }
 
@@ -349,11 +349,11 @@ h5 {
   position: absolute;
     content: "";
     width: 100%;
-    height: calc(100% - 120px);
+    /* height: calc(100% - 120px); */
     left: 0;
     right: 0;
     top: 120px;
-    background: #F5F5F5;
+    /* background: #F5F5F5; */
     z-index: -1;
 }
 .title-border::before{
@@ -365,7 +365,7 @@ h5 {
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #000000;
+  /* background: #000000; */
 }
 .title-border{
   margin-left: 112px;
