@@ -15,11 +15,11 @@ const Navbar = () => {
         <div className="container">
         <div className="pr-[64px] pt-[6px] pb-[6px] ">
           <ul className=" flex justify-end upNav ">
-            <li>+ 61 448 173 307</li>
+            <li><a>+ 61 448 173 307</a></li>
             <li className="border-l border-r">
-              sophie@youniquecoaching.com.au
+             <a> sophie@youniquecoaching.com.au</a>
             </li>
-            <li >Request a Demo</li>
+            <li ><a>Request a Demo</a></li>
           </ul>
         </div>
         </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
                 </IconButton></a>
               </li>
               <li className="hover:text-[#F03023]"><a href="#">About</a></li>
-              <li className="flex items-center gap-[6px] relative servicesLink hover:text-[#F03023]">
+              <li className="flex items-center gap-[6px] relative servicesLink ">
               <a href="#" className="flex items-center gap-2 ">Services <img src={chevron} alt="Chevron" /></a>
               
                 <ul className="servicesSubMenu">
@@ -54,7 +54,7 @@ const Navbar = () => {
                 </ul>
               </li>
 
-              <li className="flex items-center  gap-[6px] relative resourceLink hover:text-[#F03023]">
+              <li className="flex items-center  gap-[6px] relative resourceLink ">
               <a href="#" className="flex items-center gap-2">  Resources  <img src={chevron} alt="Chevron" /></a>
                 <ul className="resourceSubMenu space-y-2 ">
                   <li><a href="#">Resource SubMenu 1</a></li>
