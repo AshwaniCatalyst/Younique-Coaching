@@ -16,7 +16,7 @@ const OurServices = () => {
                 Our <span className="font-bold">Services</span>
               </h2>
             </div>
-            <div className="flex flex-col  justify-center md:flex-row  md:gap-0 gap-[40px] border ">
+            <div className="flex flex-col  justify-center md:flex-row  md:gap-0 gap-[40px]  ">
               <div className="col-12 md:max-w-[25%] flex justify-center ">
                 <div className="max-w-[304px] serviceSectionCard">
                 <div className="serviceSectionImageWrapper">

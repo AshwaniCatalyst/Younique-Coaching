@@ -44,8 +44,8 @@ const CarouselSection = () => {
               className="w-full "
             >
               <Carousel.Item>
-                <div className="row1 flex-col md:flex-row max-w-[100%]  items-center ">
-                  <div className="col-12 md:max-w-[58.333333%]  flex flex-col  lg:order-1 sm:order-2 ">
+                <div className="row1 flex-col md:flex-row max-w-[100%]  items-center">
+                  <div className="col-12 md:max-w-[58.333333%]  flex flex-col border  md:order-1 sm:order-2 ">
                     <div className="mdText font-bold  ">Sinead Connelly</div>
                     <div className="smText text-[#444444] leading-[22px] font-normal">
                       Co-founder and Director, Lotus People
@@ -53,7 +53,7 @@ const CarouselSection = () => {
                     <div className="max-w-[42px] max-h-[32px] mt-[32px]">
                       <img src={commaIcon} className="" alt="quotesIcon" />
                     </div>
-                    <div className="border smText font-light leading-[36px] text-[#000000] mt-[16px]  md:max-w-[649px] ">
+                    <div className=" smText font-light leading-[36px] text-[#000000] mt-[16px]   ">
                       I couldn’t recommend Sophie’s book more. As an
                       inexperienced recruitment consultant over ten years ago, I
                       leant on Sophie’s guidance and advice shared in this book
@@ -72,7 +72,7 @@ const CarouselSection = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 md:max-w-[41.666667%] border lg:order-2 sm:order-1  ">
+                  <div className="col-12 md:max-w-[41.666667%] md:order-2 sm:order-1  ">
                     
                     <img
                       src={crsl1}
