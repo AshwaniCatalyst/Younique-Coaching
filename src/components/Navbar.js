@@ -43,7 +43,7 @@ const Navbar = () => {
               </li>
               <li className="hover:text-[#F03023]"><a>About</a></li>
               <li className="flex items-center gap-[6px] relative servicesLink ">
-              <a  className="flex items-center gap-2 ">Services <img src={chevron} className="arrowDown" alt="Chevron" /></a>
+              <a  className="flex items-center gap-2 text-[#000000]">Services <img src={chevron} className="arrowDown" alt="Chevron" /></a>
               
                 <ul className="servicesSubMenu">
                   <li><a >Services SubMenu 1</a></li>
@@ -52,7 +52,7 @@ const Navbar = () => {
               </li>
 
               <li className="flex items-center gap-[6px] relative resourceLink ">
-              <a className="flex items-center  gap-[6px]">  Resources  <img src={chevron} alt="Chevron" /></a>
+              <a className="flex items-center  gap-[6px] text-[#000000]">  Resources  <img src={chevron} alt="Chevron" /></a>
                 <ul className="resourceSubMenu space-y-2 ">
                   <li><a>Resource SubMenu 1</a></li>
                   <li><a>Resource SubMenu 2</a></li>
