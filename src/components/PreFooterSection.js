@@ -4,7 +4,7 @@ import arrow from "../images/btnArrow.svg";
 const PreFooterSection = () => {
   return (
     <>
-      <div className="pt-[60px] pb-[100px]">
+      <div className="pt-[60px] pb-[60px] md:pb-[100px]">
         <div className="container flex flex-col items-center">
           <h2 className="max-w-[328px] text-[36px] leading-[44px] font-light md:max-w-[864px] lg:h2 h-auto text-center">
             Let's work together to grow you and your

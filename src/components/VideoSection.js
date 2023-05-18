@@ -1,10 +1,8 @@
 import React from "react";
-import VideoImg from "../images/VideoPlayer.svg";
-import VideoInfo from "../images/VideoInfo.svg";
 const VideoSection = () => {
   return (
     <>
-      <div className="tiltedContainer md:before:bg-[#F03023] after:bg-[#F03023] after:min-h-[calc(100%+1px)] overflow-hidden md:after:min-h-[calc(100%-346px)] ">
+      <div className="tiltedContainer before:hidden md:before:block md:before:bg-[#F03023] after:bg-[#F03023] after:min-h-[calc(100%+1px)] overflow-hidden md:after:min-h-[calc(100%-346px)] ">
         <div className="container ">
           <div className="row1 text-white pt-[70px] md:pt-[120px]">
             <div className="hidden md:flex col-4"></div>

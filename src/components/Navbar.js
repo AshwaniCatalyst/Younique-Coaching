@@ -43,7 +43,9 @@ const Navbar = () => {
               </li>
               <li className="hover:text-[#F03023]"><a>About</a></li>
               <li className="flex items-center gap-[6px] relative servicesLink ">
-              <a  className="flex items-center gap-2 text-[#000000]">Services <img src={chevron} className="arrowDown" alt="Chevron" /></a>
+              <a  className="flex items-center gap-2 text-[#000000]">Services 
+              <img src={chevron} className="arrowDown hover:hidden" alt="Chevron" />
+              </a>
               
                 <ul className="servicesSubMenu">
                   <li><a >Services SubMenu 1</a></li>
