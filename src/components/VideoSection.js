@@ -7,7 +7,7 @@ const VideoSection = () => {
       <div className="tiltedContainer md:before:bg-[#F03023] after:bg-[#F03023] after:min-h-[calc(100%+1px)] overflow-hidden md:after:min-h-[calc(100%-346px)] ">
         <div className="container ">
           <div className="row1 text-white pt-[70px] md:pt-[120px]">
-            <div className="hidden md:flex col-3"></div>
+            <div className="hidden md:flex col-4"></div>
             <div className="col-8">
               <div className="pb-[40px] max-w-[304px] md:max-w-[481px] ">
                 <h2 className="title-border ml-0 before:bg-[#FFFFFF]">

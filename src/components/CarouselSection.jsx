@@ -86,7 +86,7 @@ const CarouselSection = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <div className="row1 flex-col md:flex-row max-w-[100%]  items-center  justify-center">
-                  <div className="col-12 md:max-w-[58.333333%]  flex flex-col   md:order-1 sm:order-2 ">
+                  <div className="col-12 md:max-w-[58.333333%]  flex flex-col border  md:order-1 sm:order-2 ">
                     <div className="mdText font-bold  ">Sinead Connelly</div>
                     <div className="smText text-[#444444] leading-[22px] font-normal">
                       Co-founder and Director, Lotus People
@@ -117,7 +117,7 @@ const CarouselSection = () => {
                     
                     <img
                       src={crsl1}
-                      className=" max-h-[160px] max-w-[160px] md:max-h-[500px]   md:max-w-[467px] object-cover  object-center  rounded-full md:rounded-none md:object-contain"
+                      className=" mt-[32px] max-h-[160px] max-w-[160px] md:max-h-[500px]   md:max-w-[467px] object-cover  object-center  rounded-full md:rounded-none md:object-contain"
                       alt="Customer Image"
                     />
                     
