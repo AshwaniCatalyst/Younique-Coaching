@@ -9,6 +9,7 @@ import VideoSection from '../components/VideoSection'
 import ResourceSection from '../components/ResourceSection'
 import CarouselSection from '../components/CarouselSection'
 import PreFooterSection from '../components/PreFooterSection'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const index = () => {
   return (

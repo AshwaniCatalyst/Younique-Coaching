@@ -6,16 +6,18 @@ import crd4 from "../images/c4.svg";
 const OurServices = () => {
   return (
     <>
-      <div className="tiltedContainer before:bg-[#F5F5F5] after:bg-[#F5F5F5] after:h-[calc(100%-120px)] mb-[160px]">
-        <div className="container">
-          <div className="row1 flex-col md:items-start sm:items-center ">
-            <div className="pb-[30px] ">
-              <h2 className="title-border before:bg-[#000000]">
+      <div className="tiltedContainer  md:before:bg-[#F5F5F5] after:bg-[#F5F5F5] after:h-[calc(100%-120px)] mb-[160px]">
+        <div className="container ">
+          <div className="row1  pt-[60px] md:pt-0 flex-col   ">
+            <div className=" max-w-[138px] md:max-w-[263px] pb-[30px] md:ml-[112px]">
+              <h2 className="text-[36px] leading-[44px] font-light  title-border before:ml-[16px] before:bg-[#000000]
+               md:ml-0 md:text-[56px] md:leading-[64px] 
+              ">
                 Our <span className="font-bold">Services</span>
               </h2>
             </div>
-            <div className="row1 p-auto">
-              <div className="col-3 items-center ">
+            <div className="flex flex-col  justify-center md:flex-row  md:gap-0 gap-[40px] border ">
+              <div className="col-12 md:max-w-[25%] flex justify-center ">
                 <div className="max-w-[304px] serviceSectionCard">
                 <div className="serviceSectionImageWrapper">
                   <img src={crd1} alt="card-Image" />
@@ -33,7 +35,7 @@ const OurServices = () => {
                 </a>
                 </div>
               </div>
-              <div className="col-3 ">
+              <div className="col-12 md:max-w-[25%] flex justify-center ">
                 <div className="max-w-[304px] serviceSectionCard ">
                 <div className="serviceSectionImageWrapper">
                   <img src={crd2} alt="card-Image" />
@@ -52,7 +54,7 @@ const OurServices = () => {
                 </a>
                 </div>
               </div>
-              <div className="col-3 ">
+              <div className=" col-12 md:max-w-[25%] flex justify-center ">
                 <div className="max-w-[304px] serviceSectionCard ">
                   <div className="serviceSectionImageWrapper">
                   <img src={crd3} alt="card-Image" />
@@ -69,7 +71,7 @@ const OurServices = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-3 ">
+              <div className="col-12 md:max-w-[25%] flex justify-center ">
                 <div className="max-w-[304px] serviceSectionCard ">
                 <div className="serviceSectionImageWrapper">
                   <img src={crd4} alt="card-Image" />

@@ -4,8 +4,10 @@ const ResourceSection = () => {
   return (
     <>
       <div className="pt-[60px] pb-[100px]">
-        <div className="container">
-          <div className="title-border max-w-[392px] before:bg-[#000000]">
+        <div className="container ">
+        <div className="">
+        <div className="title-border max-w-[392px] before:bg-[#000000] mb-[40px]">
+            
             <h2 className="font-black">Resources</h2>
             <div className="lgText">
               Everything you need to know about how to set up and grow an
@@ -13,19 +15,23 @@ const ResourceSection = () => {
             </div>
           </div>
           <div className="row1" >
-            <div className="col-6 resourceSectionImage   flex justify-center ">
+            <div className="col-12 md:max-w-[41.666667%] resourceSectionImage   flex justify-center ">
               <img src={resourceImg} className="max-h-[412px] max-w-[273px]" alt="Product Image"/>
             </div>
-            <div className="col-6 flex items-center ">
-              <div className="flex flex-col max-w-[416px] pl-[32px]">
+            <div className="col-12 md:max-w-[58.333333%] mt-[24px] md:mt-0  flex justify-center md:justify-normal items-center  ">
+              <div className="flex flex-col  max-w-[416px] md:ml-[32px]">
               <div className="smText font-bold">BOOK</div>
-              <h3 className="pt-[22px] font-black leading-10">Secrets To Running A Lucrative Temp Desk</h3>
-              <div className="smText font-normal text-[#444444] pt-[8px]">By Sophie Robertson (Author) </div>
-              <div className="mdText  text-[#444444] pt-[16px]">In this comprehensive book full of real-life case studies and based on many years of personal experience and success, Sophie Robertson outlines the processes involved in running a highly lucrative temp desk, which will both strengthen your client relationships and ensure you become the employer of choice for top-quality temps.</div>
-              <a href="#" ><button className="border-2 hover:bg-[#F03023] hover:text-[#ffffff] hover:border-0 border-black pt-[13px] pb-[13px] pl-[32px] pr-[32px] max-w-[180px] smText font-bold mt-[25px]">buy now $49.99</button></a>
+              <h3 className="mt-[22px] self-stretch text-[40px] font-black leading-[48px]">Secrets To Running A Lucrative Temp Desk</h3>
+              <div className="smText font-normal text-[#444444] mt-[8px]">By Sophie Robertson (Author) </div>
+              <div className="mdText font-normal self-stretch text-[#444444] pt-[16px]">In this comprehensive book full of real-life case studies and based on many years of personal experience and success, Sophie Robertson outlines the processes involved in running a highly lucrative temp desk, which will both strengthen your client relationships and ensure you become the employer of choice for top-quality temps.</div>
+              <button className="border-2 hover:bg-[#F03023] hover:text-[#ffffff] hover:border-0 border-black 
+              pt-[13px] pb-[13px] pl-[30px] pr-[30px] max-w-full md:max-w-[180px] md:max-h-[48px] leading-[24px] md:leading-[22px] smText font-bold 
+              mt-[25px] uppercase">buy now $49.99</button>
               </div>
             </div>
           </div>
+        </div>
+
         </div>
       </div>
     </>

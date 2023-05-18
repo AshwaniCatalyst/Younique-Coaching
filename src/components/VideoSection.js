@@ -4,12 +4,12 @@ import VideoInfo from "../images/VideoInfo.svg";
 const VideoSection = () => {
   return (
     <>
-      <div className="tiltedContainer before:bg-[#F03023] after:bg-[#F03023] after:min-h-[calc(100%-370px)] ">
+      <div className="tiltedContainer md:before:bg-[#F03023] after:bg-[#F03023] after:min-h-[100%+130px] md:after:min-h-[calc(100%-137px)] ">
         <div className="container">
-          <div className="row1 text-white pt-[120px]">
-            <div className="col-4"></div>
+          <div className="row1 text-white pt-[70px] md:pt-[120px]">
+            <div className="hidden md:flex col-3"></div>
             <div className="col-8">
-              <div className="pb-[40px] max-w-[481px] ">
+              <div className="pb-[40px] max-w-[304px] md:max-w-[481px] ">
                 <h2 className="title-border ml-0 before:bg-[#FFFFFF]">
                   Hear From
                   <span className="font-bold"> Sophie Robertson</span>
@@ -18,9 +18,9 @@ const VideoSection = () => {
             </div>
           </div>
           <div className="row1 text-white items-center">
-            <div className="col-4 flex flex-col items-center justify-end">
-              <div className="flex flex-col max-w-[516px]  gap-16">
-                <div className="flex flex-col text-white">
+            <div className="col-12 md:max-w-[33.333333%] sm:order-2 md:order-1 flex flex-col items-center md:justify-end mt-[32px] md:mt-0">
+              <div className="flex flex-col max-w-[516px]  ">
+                <div className="flex flex-col text-white mb-[32px]">
                   <h3>Recruitment Advisor and Coach</h3>
                   <h6>
                     I’m here to help you scale your business with powerful
@@ -32,7 +32,7 @@ const VideoSection = () => {
                 </p>
               </div>
             </div>
-            <div className="col-8 " style={{ padding: "36.25% 0 0 0", position: "relative" }}>
+            <div className="col-12 md:max-w-[66.666667%] sm:order-1 md:order-2" style={{ padding: "36.25% 0 0 0", position: "relative" }}>
                 <iframe
                   src="https://player.vimeo.com/video/800973371?h=3be40b6c38&title=0&byline=0&portrait=0"
                   style={{
@@ -49,39 +49,33 @@ const VideoSection = () => {
             </div>
           </div>
           <div className="row1">
-          <div className="col-4"></div>
-          <div className="col-8 max-w-[864px] h-auto">
-            <img src={VideoInfo} className="" alt="Video Info" />
+          <div className=" col-4 hidden md:flex"></div>
+          <div className="col-12 md:max-w-[66.666667%] max-w-[864px] max-h-[152px]   ">
+            <div className="bg-[#F03023]   md:pl-[75px] md:pr-[75px] w-full">
+              <ul className="video-info-col sm:before:hidden md:items-center md:before:border-opacity-[0.3] items-start flex-col md:flex-row">
+                <li className="before:opacity-0">
+                <h3 className="leading-[48px] mb-[4px] font-black">15</h3>
+                <div className="xsText ">YEARS</div>  
+                </li>
+                <li>
+                <h3 className="leading-[48px] mb-[4px] font-black">22,000</h3>
+                <div className="xsText">COACHING HOURS</div>
+                </li>
+                <li>
+                <h3 className="leading-[48px] mb-[4px] font-black">270+</h3>
+                <div className="xsText ">CLIENTS</div>
+                </li>
+                <li>
+                <h3 className="leading-[48px] mb-[4px] font-black">Over 250</h3>
+                <div className="xsText ">MASTERCLASSES </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         </div>
       </div>
     </>
-    // <div className="bg-white mb-20  -z-10">
-    //   <div className="tiltedContainer bg-[#F03023] flex  pl-[64px] pr-[64px]">
-    //     <div className="w-full flex flex-col items-center gap-[50px]">
-    //       <div className="pt-[132px]">
-    //         <h2 className=" ml-[176px] pl-[34px] border-l-4 border-black">
-    //         Hear From <br />
-    //           <span className="font-bold ">Sophie Robertson</span>
-    //         </h2>
-    //       </div>
-    //       <div className="flex w-full   items-center justify-between gap-[32px]">
-    //       <div className="flex flex-col max-w-[516px]  gap-16">
-    //         <div className="flex flex-col text-white">
-    //           <h3>Recruitment Advisor and Coach</h3>
-    //           <h6>I’m here to help you scale your business with powerful strategies so you can make more while doing less.</h6>
-    //         </div>
-    //         <p className="underline font-semibold text-white">Read More About Sophie</p>
-    //       </div>
-    //       {/* <div className="max-w-full   min-h-full z-20 "> */}
-    //         <img src={VideoImg} className="max-w-full h-auto" alt="Video Player"/>
-    //       {/* </div> */}
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <img src={VideoInfo} className="relative left-[48.4%]" alt='Video Info'/>
-    // </div>
   );
 };
 
