@@ -63,11 +63,11 @@ const Navbar = () => {
               <li className="hover:text-[#F03023]"><a >Contact Us</a></li>
               <li className=" ml-[25px] mr-[25px]  navbarBorder">
                 
-              <a  className="flex gap-2 hover:text-[#F03023]"> <img src={cartIcon}  alt="cart" /> 0
+              <a  className="flex gap-2 text-[#000000] hover:text-[#F03023]"> <img src={cartIcon}  alt="cart" /> 0
               </a>
               </li>
               <li>
-                <div className=" pl-6 pr-6 hover:text-[#F03023]"><a href="#">Sign In</a></div>
+                <div className=" pl-6 pr-6 hover:text-[#F03023]"><a href="#" className="text-[#000000]">Sign In</a></div>
               </li>
               <li>
               <a >
