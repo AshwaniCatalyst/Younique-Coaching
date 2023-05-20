@@ -17,7 +17,7 @@ const ClientReviewSection = () => {
   return (
     <>
       <div className="container flex justify-center  mb-[60px] md:mb-[100px]">
-        <div className="row1 w-full  pb-[10px] md:pb-[240px]">
+        <div className="row1 w-full  pb-[10px] md:pb-[240px] ">
           <div className="text-[56px] font-light leading-[64px] pb-[30px] max-w-[304px] md:max-w-[653px] ">
             <h2 className=" title-border  before:bg-[#000000] ">
               What Our Clients Say About
@@ -31,8 +31,8 @@ const ClientReviewSection = () => {
               }
             >
               <div className=" flex flex-col md:flex-row ">
-                <div className="col-12 md:max-w-[25%] pr-[40px]  ">
-                  <div className="h-auto max-w-[160px] md:max-w-[304px] rounded-full md:rounded-none ">
+                <div className=" col-12 md:max-w-[25%] pr-[40px]  ">
+                  <div className=" h-auto max-w-[160px] md:max-w-[304px] rounded-full md:rounded-none ">
                   <img
                     src={enlargedCustomer1}
                     className="object-fill "

@@ -32,8 +32,8 @@ const Navbar = () => {
       <div
         className=" w-full   " style={{borderBottom: '1px solid #E6E6E6'}}
       >
-        <div className="row1 container  flex justify-center border">
-        <div className=" fixed row1   z-[99999999] bg-[#ffffff]  border-b border-[#e6e6e6]  justify-between  m-0   w-full">
+        <div className="row1 container   flex justify-center mt-[-10px] lg:mt-0">
+        <div className=" fixed  lg:static row1   z-[99999999] bg-[#ffffff]    justify-between  m-0   w-full">
           
           <div className=" col-4   md:max-w-[16.66%]  ">
           <div className="pt-[18px] pb-[18px]  ">
