@@ -1,11 +1,16 @@
 import { AppBar, Button, IconButton } from "@mui/material";
-import React from "react";
+import React,{useState} from "react";
 import navLogo from "../images/navLogo.svg";
 import homeIcon from "../images/HomeIcon.svg";
 import chevron from "../images/chevron.svg";
 import cartIcon from "../images/CartIcon.svg";
 import hamMenu from '../images/hamMenu.svg'
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen(!open);
+    };
+    
   return (
     <>
       <div
@@ -25,18 +30,20 @@ const Navbar = () => {
         </div>
       </div>
       <div
-        className="static    " style={{borderBottom: '1px solid #E6E6E6'}}
+        className=" w-full   " style={{borderBottom: '1px solid #E6E6E6'}}
       >
-        <div className="container flex justify-center ">
-        <div className="row1  pt-[16px] pb-[16px] justify-between     w-full">
-          <div className=" sm:col-6 md:col-6  lg:col-2 ">
-            <img src={navLogo} alt="logo" />
-          </div>
+        <div className="row1 container  flex justify-center border">
+        <div className=" fixed row1   z-[99999999] bg-[#ffffff]  border-b border-[#e6e6e6]  justify-between  m-0   w-full">
           
-          <div className=" md:col-6 sm:col-6  lg:col-8 flex justify-end   lg:w-auto   ">
-            <div className="hidden lg:flex ">
-            <ul className=" row1 hidden lg:flex      items-center justify-end navLinks">
-              <li><a >
+          <div className=" col-4   md:max-w-[16.66%]  ">
+          <div className="pt-[18px] pb-[18px]  ">
+          <img src={navLogo} alt="logo" />
+          </div>
+            
+          </div>
+          <div className="lg:max-w-[83.333333%]  hidden lg:flex  items-end z-[10000000000]  ">
+            <ul className="  hidden lg:flex      items-center  navLinks">
+              <li className="p-0"><a >
                 <IconButton>
                   <img src={homeIcon} className="max-h-[44px] w-auto" alt="home" />
                 </IconButton></a>
@@ -44,20 +51,20 @@ const Navbar = () => {
               <li className="hover:text-[#F03023]"><a>About</a></li>
               <li className="flex items-center gap-[6px] relative servicesLink ">
               <a  className="flex items-center gap-2 text-[#000000]">Services 
-              <img src={chevron} className="arrowDown hover:hidden" alt="Chevron" />
+              <img src={chevron} className="arrowDown " alt="Chevron" />
               </a>
               
-                <ul className="servicesSubMenu">
-                  <li><a >Services SubMenu 1</a></li>
-                  <li><a>Services SubMenu 2</a></li>
+                <ul className="servicesSubMenu p-0">
+                  <li><a href="" className="text-[#000000]">Services SubMenu 1</a></li>
+                  <li><a href="" className="text-[#000000]">Services SubMenu 2</a></li>
                 </ul>
               </li>
 
-              <li className="flex items-center gap-[6px] relative resourceLink ">
+              <li className="flex items-center gap-[6px] relative  resourceLink ">
               <a className="flex items-center  gap-[6px] text-[#000000]">  Resources  <img src={chevron} alt="Chevron" /></a>
-                <ul className="resourceSubMenu space-y-2 ">
-                  <li><a>Resource SubMenu 1</a></li>
-                  <li><a>Resource SubMenu 2</a></li>
+                <ul className="resourceSubMenu p-0 ">
+                  <li><a href="" className="text-[#000000]">Resource SubMenu 1</a></li>
+                  <li><a href="" className="text-[#000000]">Resource SubMenu 2</a></li>
                 </ul>
               </li>
               <li className="hover:text-[#F03023]"><a>Testimonials</a></li>
@@ -69,23 +76,114 @@ const Navbar = () => {
               </a>
               </li>
               <li>
-                <div className=" pl-6 pr-6 hover:text-[#F03023]"><a href="#" className="text-[#000000]">Sign In</a></div>
+                <button className=" pl-6 pr-6 md:pl-2 md:pr-2  hover:text-[#F03023]"><a href="#" className="text-[#000000]">Sign In</a></button>
               </li>
-              <li>
-              <a >
+              <li className="p-0">
+               <a > 
                 <button className="navBtn">
                   Sign Up
-                </button></a>
+                </button>
+                </a>
               </li>
             </ul>
             </div>
-            <div className=" flex lg:hidden  justify-end  ">
-          <button
-           className=" items-center outline-none focus:outline-none   ml-auto"
+
+          <div className=" flex lg:hidden  justify-end  ">
+          <button onClick={()=>handleClick()}
+           className="min-w-[24px] min-h-[16px]  items-center outline-none focus:outline-none   ml-auto"
            ><img src={hamMenu} alt="menu"/></button>
            </div>
-          </div>
-        </div>
+           </div>
+          {/* <div className=" col-6x   lg:max-w-[83.333333%] flex justify-end      "> */}
+           <div className="block lg:hidden ">
+           <div className={open?"showToggleMenu ": "hideToggleMenu" }>
+            <div className="overlay">
+            <ul className=" row1 flex-col hidden lg:flex      items-center  navLinks">
+              <li className="p-0"><a >
+                <IconButton>
+                  <img src={homeIcon} className="max-h-[44px] w-auto" alt="home" />
+                </IconButton></a>
+              </li>
+              <li className="hover:text-[#F03023]"><a>About</a></li>
+              <li className="flex items-center gap-[6px] relative servicesLink ">
+              <a  className="flex items-center gap-2">Services
+              </a>
+              </li>
+
+              <li className="flex items-center gap-[6px] relative  resourceLink ">
+              <a className="flex items-center  gap-[6px]">  Resources</a>
+                
+              </li>
+              <li className="hover:text-[#F03023]"><a>Testimonials</a></li>
+              <li className="hover:text-[#F03023]"><a>My Webinars</a></li>
+              <li className="hover:text-[#F03023]"><a >Contact Us</a></li>
+              <li className=" ml-[25px] mr-[25px]  navbarBorder">
+                
+              <a  className="flex gap-2 text-[#000000] hover:text-[#F03023]"> <img src={cartIcon}  alt="cart" /> 0
+              </a>
+              </li>
+              <li>
+                <button className=" pl-6 pr-6 md:pl-2 md:pr-2  hover:text-[#F03023]"><a href="#" className="text-[#000000]">Sign In</a></button>
+              </li>
+              <li className="p-0">
+              
+                <button className="navBtn">
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+            </div>
+            </div>
+           </div>
+          
+
+            {/* <div className="hidden lg:flex  items-end z-[10000000000] border ">
+            <ul className=" row1 hidden lg:flex      items-center  navLinks">
+              <li className="p-0"><a >
+                <IconButton>
+                  <img src={homeIcon} className="max-h-[44px] w-auto" alt="home" />
+                </IconButton></a>
+              </li>
+              <li className="hover:text-[#F03023]"><a>About</a></li>
+              <li className="flex items-center gap-[6px] relative servicesLink ">
+              <a  className="flex items-center gap-2 text-[#000000]">Services 
+              <img src={chevron} className="arrowDown " alt="Chevron" />
+              </a>
+              
+                <ul className="servicesSubMenu p-0">
+                  <li><a href="" className="text-[#000000]">Services SubMenu 1</a></li>
+                  <li><a href="" className="text-[#000000]">Services SubMenu 2</a></li>
+                </ul>
+              </li>
+
+              <li className="flex items-center gap-[6px] relative  resourceLink ">
+              <a className="flex items-center  gap-[6px] text-[#000000]">  Resources  <img src={chevron} alt="Chevron" /></a>
+                <ul className="resourceSubMenu p-0 ">
+                  <li><a href="" className="text-[#000000]">Resource SubMenu 1</a></li>
+                  <li><a href="" className="text-[#000000]">Resource SubMenu 2</a></li>
+                </ul>
+              </li>
+              <li className="hover: text-[#F03023]"><a>Testimonials</a></li>
+              <li className="hover:text-[#F03023]"><a>My Webinars</a></li>
+              <li className="hover:text-[#F03023]"><a >Contact Us</a></li>
+              <li className=" ml-[25px] mr-[25px]  navbarBorder">
+                
+              <a  className="flex gap-2 text-[#000000] hover:text-[#F03023]"> <img src={cartIcon}  alt="cart" /> 0
+              </a>
+              </li>
+              <li>
+                <button className=" pl-6 pr-6 md:pl-2 md:pr-2  hover:text-[#F03023]"><a href="#" className="text-[#000000]">Sign In</a></button>
+              </li>
+              <li className="p-0">
+               <a > 
+                <button className="navBtn">
+                  Sign Up
+                </button>
+                </a>
+              </li>
+            </ul>
+            </div> */}
+            
         </div>
       </div>
     </>

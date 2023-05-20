@@ -28,10 +28,10 @@ const CarouselSection = () => {
 
   return (
     <>
-      <div className="carouselSection pt-[100px] pb-[100px] md:mb-[100px] ">
+      <div className="carouselSection pt-[60px] pb-[60px] md:pb-[100px] md:pt-[100px] ">
         <div className="container flex justify-center ">
           <div className="carousel-sub-container flex flex-col justify-center">
-            <h3 className="max-w-[363px] pr-[100px] md:leading-[48px] text-[32px] md:text-[40px]  font-black ">
+            <h3 className="max-w-[363px] pr-[100px] md:pr-0 md:leading-[48px] text-[32px] md:text-[40px]  font-black ">
               What People Say About Book
             </h3>
             <div className="row1 items-center  m-auto ">
@@ -109,7 +109,7 @@ const CarouselSection = () => {
                       <div className="max-w-[42px] max-h-[32px] mt-[32px]">
                         <img src={commaIcon} className="" alt="quotesIcon" />
                       </div>
-                      <div className=" smText font-light leading-[36px] text-[#000000] mt-[16px]   ">
+                      <div className=" text-[24px] font-light leading-[36px] text-[#000000] mt-[16px]   ">
                         I couldn’t recommend Sophie’s book more. As an
                         inexperienced recruitment consultant over ten years ago,
                         I leant on Sophie’s guidance and advice shared in this

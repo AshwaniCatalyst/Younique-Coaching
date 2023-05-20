@@ -2,9 +2,9 @@ import React from "react";
 const VideoSection = () => {
   return (
     <>
-      <div className="tiltedContainer before:hidden md:before:block md:before:bg-[#F03023] after:bg-[#F03023] after:min-h-[calc(100%+1px)] overflow-hidden md:after:min-h-[calc(100%-346px)] ">
+      <div className="tiltedContainer  before:hidden md:before:block md:before:bg-[#F03023] after:bg-[#F03023] after:min-h-[calc(100%)] overflow-hidden md:after:min-h-[calc(100%-230px)] ">
         <div className="container ">
-          <div className="row1 text-white pt-[70px] md:pt-[120px]">
+          <div className="row1 text-white pt-[170px] md:pt-[120px]">
             <div className="hidden md:flex col-4"></div>
             <div className="col-8">
               <div className="pb-[40px] max-w-[304px] md:max-w-[481px] ">
@@ -15,8 +15,8 @@ const VideoSection = () => {
               </div>
             </div>
           </div>
-          <div className="row1 text-white items-center">
-            <div className="col-12 md:max-w-[33.333333%] sm:order-2 md:order-1 flex flex-col items-center md:justify-end mt-[32px] md:mt-0">
+          <div className="row1 flex-col-reverse md:flex-row text-white items-center">
+            <div className="col-12 md:max-w-[33.333333%]  flex flex-col items-center md:justify-end mt-[32px] md:mt-0">
               <div className="flex flex-col max-w-[516px]  ">
                 <div className="flex flex-col text-white mb-[32px]">
                   <h3>Recruitment Advisor and Coach</h3>
@@ -30,8 +30,9 @@ const VideoSection = () => {
                 </p>
               </div>
             </div>
-            <div className="col-12 md:max-w-[66.666667%] sm:order-1 md:order-2" style={{ padding: "36.25% 0 0 0", position: "relative" }}>
-                <iframe
+            <div className="col-12 md:max-w-[66.666667%] " >
+               <div className=" overflow-hidden h-0 w-[100%]" style={{ padding: "0 0 56.25% 0", position: "relative", height:"0" }}>
+               <iframe
                   src="https://player.vimeo.com/video/800973371?h=3be40b6c38&title=0&byline=0&portrait=0"
                   style={{
                     position: "absolute",
@@ -44,11 +45,13 @@ const VideoSection = () => {
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+               </div>
+                
             </div>
           </div>
           <div className="row1">
           <div className=" col-4 hidden md:flex"></div>
-          <div className="col-12 md:max-w-[66.666667%] max-w-[864px] max-h-[152px]   ">
+          <div className="col-12 md:max-w-[66.666667%]    ">
             <div className="bg-[#F03023]   md:pl-[75px] md:pr-[75px] w-full">
               <ul className="video-info-col sm:before:hidden md:items-center md:before:border-opacity-[0.3] items-start flex-col md:flex-row">
                 <li className="before:opacity-0">

@@ -6,9 +6,9 @@ import crd4 from "../images/c4.svg";
 const OurServices = () => {
   return (
     <>
-      <div className="tiltedContainer before:hidden md:before:block md:before:bg-[#F5F5F5] after:bg-[#F5F5F5] after:h-[calc(100%-120px)] mb-[60px] md:mb-[160px]">
+      <div className="tiltedContainer before:hidden md:before:block md:before:bg-[#F5F5F5] after:bg-[#F5F5F5] after:h-[calc(100%-120px)] mb-[60px] pt-[120px]   md:mb-[160px]">
         <div className="container ">
-          <div className="row1  pt-[60px] md:pt-0 flex-col   ">
+          <div className="row1  pt-[60px] pb-[60px] md:pb-[120px]  md:pt-0 flex-col   ">
             <div className=" max-w-[138px] md:max-w-[263px] pb-[30px] md:ml-[112px]">
               <h2 className="text-[36px] leading-[44px] font-light  title-border before:ml-[16px] before:bg-[#000000]
                md:ml-0 md:text-[56px] md:leading-[64px] 

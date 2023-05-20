@@ -1,12 +1,12 @@
 import React from "react";
-import resourceImg from '../images/ResourceSectionImage.svg'
+import resourceImg from '../images/resourceImg.svg'
 const ResourceSection = () => {
   return (
     <>
-      <div className="pt-[60px] pb-[100px]">
+      <div className="pt-[70px] pb-[58px] md:pt-[160] md:pb-[100px] ">
         <div className="container ">
-        <div className="">
-        <div className="title-border max-w-[392px] before:bg-[#000000] mb-[40px]">
+        <div className=" max-w-[814px] m-auto ">
+        <div className=" title-border  max-w-[392px] before:bg-[#000000] mb-[40px]">
             
             <h2 className="font-black">Resources</h2>
             <div className="lgText">
@@ -14,12 +14,13 @@ const ResourceSection = () => {
               on-hire temp and contractor desk
             </div>
           </div>
-          <div className="row1" >
-            <div className="col-12 md:max-w-[41.666667%] resourceSectionImage   flex justify-center ">
-              <img src={resourceImg} className="max-h-[412px] max-w-[273px]" alt="Product Image"/>
+          <div className="row1  m-auto" >
+            <div className="col-12   md:max-w-[41.666667%] p-0 border  ">
+              <img src={resourceImg} className="w-full max-h-[513px] object-center object-cover" alt="Product Image"/>
+            
             </div>
-            <div className="col-12 md:max-w-[58.333333%] mt-[24px] md:mt-0  flex justify-center md:justify-normal items-center  ">
-              <div className="flex flex-col  max-w-[416px] md:ml-[32px]">
+            <div className="  col-12 md:max-w-[58.333333%] mt-[24px] md:mt-0  flex justify-center md:justify-normal items-center  ">
+              <div className="  flex flex-col  max-w-[416px] md:ml-[32px]">
               <div className="smText font-bold">BOOK</div>
               <h3 className="mt-[22px] self-stretch text-[40px] font-black leading-[48px]">Secrets To Running A Lucrative Temp Desk</h3>
               <div className="smText font-normal text-[#444444] mt-[8px]">By Sophie Robertson (Author) </div>
