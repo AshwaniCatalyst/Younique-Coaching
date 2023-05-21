@@ -16,9 +16,9 @@ const ClientReviewSection = () => {
   };
   return (
     <>
-      <div className="container flex justify-center  mb-[60px] md:mb-[100px]">
-        <div className="row1 w-full  pb-[10px] md:pb-[240px] ">
-          <div className="text-[56px] font-light leading-[64px] pb-[30px] max-w-[304px] md:max-w-[653px] ">
+      <div className="container flex justify-center ">
+        <div className="row1 w-full  pb-[60px] md:pb-[154px] ">
+          <div className="text-[56px] lg:ml-[113px] font-light leading-[64px] pb-[30px] max-w-[304px] md:max-w-[653px] ">
             <h2 className=" title-border  before:bg-[#000000] ">
               What Our Clients Say About
               <span className="font-bold"> Younique Coaching</span>
@@ -56,12 +56,14 @@ const ClientReviewSection = () => {
                         alt="CommaIcon"
                       />
                     </div>
-                    <h5 className="font-light pt-[16px] leading-9 line-clamp-none md:line-clamp-4">
+                    <h5 className="font-light pt-[16px] leading-9 line-clamp-none md:line-clamp-4 ">
                       Having finished 5 coaching sessions with Sophie in early
                       August 2022, I began running my senior Dr recruitment
                       desk. I set myself the target of billing a certain amount
                       per month by the end of the year and ended up achieving it
-                      that month! Sophie’s experience, tips and methods...
+                      that month! Sophie’s experience, tips and methods , i set myself the target of billing a certain amount
+                      per month by the end of the year and ended up achieving it
+                      that month
                     </h5>
                     <div className="sm underline hidden md:flex text-black hover:text-[#F03023] font-semibold pt-[16px]">
                       <a href="#" className="text-[#000000]">
@@ -104,7 +106,7 @@ const ClientReviewSection = () => {
                       alt="CommaIcon"
                     />
                   </div>
-                  <h5 className="font-light pt-[16px] leading-9 line-clamp-none md:line-clamp-4">
+                  <h5 className="font-light pt-[16px] leading-9 line-clamp-none md:line-clamp-4 ">
                     I am honestly struggling to put into words how great Sophie
                     has been for my growth and development. The knowledge and
                     wisdom she comes with has taught me so much in such little
@@ -153,12 +155,13 @@ const ClientReviewSection = () => {
                       alt="CommaIcon"
                     />
                   </div>
-                  <h5 className="font-light pt-[16px] leading-9 line-clamp-none md:line-clamp-4">
+                  <h5 className="font-light pt-[16px] leading-9 line-clamp-none md:line-clamp-4 ">
                     I wanted to let you know I am 12 months into the AHRI APC
                     course and I thought of you today. We were asked about
                     training we have received throughout our careers which have
                     been a effective, and I talked about you and the impact you
-                    have had. I...
+                    have had. I have also read her book more
+                    times than I can count,...
                   </h5>
                   <div className="sm underline hidden md:flex text-black hover:text-[#F03023] font-semibold pt-[16px]">
                     <a href="#" className="text-[#000000]">
@@ -201,7 +204,7 @@ const ClientReviewSection = () => {
                       alt="CommaIcon"
                     />
                   </div>
-                  <h5 className="font-light pt-[16px] leading-9 line-clamp-none md:line-clamp-4">
+                  <h5 className="font-light pt-[16px] leading-9 line-clamp-none md:line-clamp-4 ">
                     I have attended Sophie’s masterclasses many times and always
                     learn something new. I love Sophie’s incredible
                     storytelling, no-nonsense approach and find that her

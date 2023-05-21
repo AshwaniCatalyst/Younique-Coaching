@@ -5,7 +5,7 @@ import arrow from "../images/btnArrow.svg";
 const HeroSection = () => {
   return (
     <>
-      <div className="heroSection pt-[120px] mb-[-60px]  md:mb-[150px]">
+      <div className="heroSection pt-[32px] mb-[-60px]  md:mb-[150px]">
         <div className="container flex justify-center">
           <div className="row1 w-full  pt-[51px] flex-row  justify-center  items-center ">
             <div className="col-12 md:max-w-[58.333333%] flex flex-col mb-[38px]">

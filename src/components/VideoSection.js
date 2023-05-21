@@ -2,9 +2,10 @@ import React from "react";
 const VideoSection = () => {
   return (
     <>
-      <div className="tiltedContainer  before:hidden md:before:block md:before:bg-[#F03023] after:bg-[#F03023] after:min-h-[calc(100%)] overflow-hidden md:after:min-h-[calc(100%-230px)] ">
-        <div className="container ">
-          <div className="row1 text-white pt-[170px] md:pt-[120px]">
+      <div className="tiltedContainer  before:hidden md:before:block md:before:bg-[#F03023] after:bg-[#F03023] after:min-h-[100%] overflow-hidden md:after:min-h-[calc(100%-230px)] ">
+        <div className="container  ">
+          <div>
+          <div className="row1 text-white   pt-[170px]   md:pt-[120px]">
             <div className="hidden md:flex col-4"></div>
             <div className="col-8">
               <div className="pb-[40px] max-w-[304px] md:max-w-[481px] ">
@@ -74,6 +75,7 @@ const VideoSection = () => {
             </div>
           </div>
         </div>
+          </div>
         </div>
       </div>
     </>
