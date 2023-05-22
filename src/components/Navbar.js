@@ -35,7 +35,7 @@ const Navbar = () => {
         className=" w-full    "
         style={{ borderBottom: "1px solid #E6E6E6" }}
       >
-        <div className=" container    flex  ">
+        <div className=" container  relative   flex  ">
           <div className="hidden   justify-between lg:flex items-center m-0   w-full ">
             <div className=" col-2    ">
               <div className="  max-w-[133.17px] h-[34px]   ">
@@ -126,18 +126,18 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          <div className="flex justify-center fixed  lg:hidden w-[100%]  z-[99] border-b bg-[#fff] border-[#E6E6E6] ">
+          <div className=" fixed   lg:hidden w-[100%] left-0 right-0 top-0 z-[999] border-b bg-[#fff] border-[#E6E6E6] ">
             <div className="flex pt-[12px] pb-[12px] justify-between items-center w-full  m-0 ">
               <div className="col-10">
                 <div className="  max-w-[173.17px] h-auto   ">
                   <img src={mobileNavLogo} alt="logo" />
                 </div>
               </div>
-              <div className="col-2  pb-[30px]  justify-end">
+              <div className="col-2   pb-[30px]  ">
                 <div
                   id="nav-icon4"
                   onClick={() => handleClick()}
-                  className={open ? "openMenu" : "nav-icon4"}
+                  className={open ? "openMenu" : "nav-icon4 "}
                 >
                   <span></span>
                   <span></span>
@@ -148,54 +148,50 @@ const Navbar = () => {
           </div>
           <div className="block lg:hidden ">
             <div className={open ? "showToggleMenu " : "hideToggleMenu"}>
-              <div className="overlay">
-                <ul className=" row1 flex-col hidden lg:flex      items-center  navLinks">
-                  <li className="p-0">
+              <div className={open?"overlay navLinksAnimation":"overlay"}>
+                <ul className=" row1 flex-col hidden lg:flex   text-[20px]   items-center  navLinks">
+                  <li className="hover:text-[#F03023] ">
                     <a>
-                      <IconButton>
-                        <img
-                          src={homeIcon}
-                          className="max-h-[44px] w-auto"
-                          alt="home"
-                        />
-                      </IconButton>
+                      Home
                     </a>
                   </li>
                   <li className="hover:text-[#F03023]">
                     <a>About</a>
                   </li>
-                  <li className="flex items-center gap-[6px] relative servicesLink ">
-                    <a className="flex items-center gap-2">Services</a>
-                  </li>
-
-                  <li className="flex items-center gap-[6px] relative  resourceLink ">
-                    <a className="flex items-center  gap-[6px]"> Resources</a>
+                  <li className="hover:text-[#F03023]">
+                    <a >Masterclasses</a>
                   </li>
                   <li className="hover:text-[#F03023]">
-                    <a>Testimonials</a>
+                    <a >Coaching/Mentoring</a>
                   </li>
                   <li className="hover:text-[#F03023]">
-                    <a>My Webinars</a>
+                    <a >Training</a>
                   </li>
                   <li className="hover:text-[#F03023]">
-                    <a>Contact Us</a>
+                    <a >Advisory</a>
                   </li>
-                  <li className=" ml-[25px] mr-[25px]  navbarBorder">
-                    <a className="flex gap-2 text-[#000000] hover:text-[#F03023]">
-                      {" "}
-                      <img src={cartIcon} alt="cart" /> 0
-                    </a>
+                  <li className="hover:text-[#F03023]">
+                    <a >Book</a>
                   </li>
-                  <li>
-                    <button className=" pl-6 pr-6 md:pl-2 md:pr-2  hover:text-[#F03023]">
-                      <a href="#" className="text-[#000000]">
-                        Sign In
-                      </a>
-                    </button>
+                  <li className="hover:text-[#F03023]">
+                    <a >Webinars</a>
                   </li>
-                  <li className="p-0">
-                    <button className="navBtn">Sign Up</button>
+                  <li className="hover:text-[#F03023]">
+                    <a >Blogs</a>
                   </li>
+                  <li className="hover:text-[#F03023]">
+                    <a >Testimonials</a>
+                  </li>
+                  <li className="hover:text-[#F03023]">
+                    <a >Contact Us</a>
+                  </li>
+                  <li className="hover:text-[#F03023]">
+                    <a >Sign In</a>
+                  </li>
+                  <li className="hover:text-[#F03023]">
+                    <a >Sign Up</a>
+                  </li>
+                  
                 </ul>
               </div>
             </div>

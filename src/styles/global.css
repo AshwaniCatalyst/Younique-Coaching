@@ -18,7 +18,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  transition: 0.3s all ease-in-out;
+  /* transition: 0.3s all ease-in-out; */
   /* list-style: none; */
 }
 
@@ -45,7 +45,6 @@ body ul {
 .container {
   position: relative;
   padding: 0 16px;
-  /* border: 2px solid red; */
   height: max-content;
 }
 
@@ -198,20 +197,60 @@ h5 {
 }
 
 
-
-/* .F */
-
-/* .navLinks li:hover{
-  color: #f03023;
-} */
-/* .navLinks li:last-child, .navLinks li:first-child
-{
-  padding: 0;
-} */
-.navLinks{
-  /* width: min-content; */
-
+.navLinksAnimation li{
+animation: fadeInRight 0.5s ease-in-out forwards;
+/* animation-fill-mode: forwards; */
 }
+.navLinksAnimation li:nth-child(2){
+  animation-delay: 0.1s;
+}
+.navLinksAnimation li:nth-child(1){
+  animation-delay: 0.015s;
+}
+.navLinksAnimation li:nth-child(3){
+  animation-delay: 0.15s;
+}
+.navLinksAnimation li:nth-child(4){
+  animation-delay: 0.25s;
+}
+.navLinksAnimation li:nth-child(5){
+  animation-delay: 0.35s;
+}
+.navLinksAnimation li:nth-child(6){
+  animation-delay: 0.18s;
+}
+.navLinksAnimation li:nth-child(7){
+  animation-delay: 0.28s;
+}
+.navLinksAnimation li:nth-child(8){
+  animation-delay: 0.1s;
+}
+.navLinksAnimation li:nth-child(9){
+  animation-delay: 0.15s;
+}
+.navLinksAnimation li:nth-child(10){
+  animation-delay: 0.20s;
+}
+.navLinksAnimation li:nth-child(11){
+  animation-delay: 0.25s;
+}
+.navLinksAnimation li:nth-child(12){
+  animation-delay: 0.30s;
+}
+.navLinksAnimation li:nth-child(13){
+  animation-delay: 0.35s;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 .navLinks li {
   cursor: pointer;
   padding: 29px 0;
@@ -223,6 +262,7 @@ h5 {
   font-size: 13px;
   line-height: 21px;
   letter-spacing: 0.15px;
+  /* opacity: 0; */
 }
 .upNav li {
   padding: 6px 16px;
@@ -248,10 +288,7 @@ h5 {
 }
 
 #nav-icon4{
-  width: 100%;
-  height: 100%;
   position: relative;
-  margin: 0 auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -261,18 +298,20 @@ h5 {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  width: 60px;
+  height: 40px;
+  margin-left: auto;
 }
 #nav-icon4 span{
-  display: block;
   position: absolute;
   height: 2.74px;
   width: 24px;
   background: #000000;
   border-radius: 100px;
   opacity: 1;
-  top: 0px;
-  right: 0px;
-  left: 0;
+  bottom: 20%;
+  left: 30%;
+  /* left: 50%; */
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -286,8 +325,9 @@ h5 {
 
 
 #nav-icon4 span:nth-child(1) {
-  top: 0px;
+  top: 30%;
   width: 24px;
+  
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -295,7 +335,7 @@ h5 {
 }
 
 #nav-icon4 span:nth-child(2) {
-  top: 8.9px;
+  top: 50%;
   width: 17.08px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -304,7 +344,7 @@ h5 {
 }
 
 #nav-icon4 span:nth-child(3) {
-  top: 17.8px;
+  top: 70%;
   width: 10.22px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -317,14 +357,16 @@ h5 {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 0px;
-  left: 0px;
+  top: 8px;
+  left: 30%;
   width: 24px;
 }
 
 #nav-icon4.openMenu span:nth-child(2) {
   width: 0%;
   opacity: 0;
+  top: 16px;
+  left: 30%;
 }
 
 #nav-icon4.openMenu span:nth-child(3) {
@@ -332,8 +374,8 @@ h5 {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 17.8px;
-  left: 0px;
+  top: 25px;
+  left: 30%;
   width:24px;
 }
 
@@ -513,51 +555,54 @@ h5 {
 }
 
 .overlay{
+  position:relative;
   padding-top: 120px;
+  left: 0;
+  right: 0;
 }
 
 .showToggleMenu{
-  display: block;
-  position: fixed;
+position: fixed;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  visibility: visible;
   overflow-y: scroll;
   overflow-x: hidden;
-  background: #000000;
-  top: 6.7%;
-  left: 0;
-  margin: auto;
   width: 100%;
+  background: #000000;
+  color: #fff;
+  padding-bottom: 40px;
   z-index: 99;
-  color: #f5f5f5;
-  animation: fadeInRight 1s ease-in-out;
 }
 
-@keyframes fadeInRight {
+/* @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translateX(300px);
+    transform: translateY(-300px);
   }
   to {
     opacity: 1;
   }
-}
+} */
 
 .hideToggleMenu{
-  animation: fadeInRight 1s ease-in-out;
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  height: 0%;
+  width: 100%;
+  transition: opacity 0.3s, visibility 0.3s, height 0.3s;
+  background: #000000;
+  margin: auto;
+  overflow: hidden;
 }
 
-/* .video-info-col li::before {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  opacity: 0.3px;
-  background: #dcdcdc;
-  margin: auto;
-} */
 
 .carousel-sub-container {
   max-width: 1095px;
