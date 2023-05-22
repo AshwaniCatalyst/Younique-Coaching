@@ -36,13 +36,13 @@ const Navbar = () => {
         style={{ borderBottom: "1px solid #E6E6E6" }}
       >
         <div className=" container    flex  ">
-          <div className="hidden pt-[18px] pb-[18px]  justify-between lg:flex items-center m-0   w-full ">
+          <div className="hidden   justify-between lg:flex items-center m-0   w-full ">
             <div className=" col-2    ">
               <div className="  max-w-[133.17px] h-[34px]   ">
                 <img src={navLogo} className="object-cover" alt="logo" />
               </div>
             </div>
-            <div className="lg:max-w-[83.333333%]  hidden lg:flex  items-end z-[10000000000]  ">
+            <div className="lg:max-w-[83.333333%]  hidden lg:flex  items-end z-[100]  ">
               <ul className="  hidden lg:flex      items-center  navLinks">
                 <li className="p-0">
                   <a>
@@ -126,8 +126,8 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          <div className="flex justify-center fixed  lg:hidden w-full  z-[9999] border-b border-[#E6E6E6] ">
-            <div className="row1 pt-[12px] pb-[12px] justify-between items-center w-full bg-[#fff]  ">
+          <div className="flex justify-center fixed  lg:hidden w-[100%]  z-[99] border-b bg-[#fff] border-[#E6E6E6] ">
+            <div className="flex pt-[12px] pb-[12px] justify-between items-center w-full  m-0 ">
               <div className="col-10">
                 <div className="  max-w-[173.17px] h-auto   ">
                   <img src={mobileNavLogo} alt="logo" />
