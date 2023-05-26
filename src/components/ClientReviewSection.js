@@ -19,7 +19,7 @@ const ClientReviewSection = () => {
       <div className="container flex justify-center ">
         <div className="row1 w-full  pb-[60px] md:pb-[154px] ">
           <div className="text-[56px] lg:ml-[113px] font-light leading-[64px] pb-[30px] max-w-[304px] md:max-w-[653px] ">
-            <h2 className=" title-border  before:bg-[#000000] ">
+            <h2 className=" title-border  before:bg-[#000000]  ">
               What Our Clients Say About
               <span className="font-bold"> Younique Coaching</span>
             </h2>

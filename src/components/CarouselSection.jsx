@@ -49,10 +49,10 @@ const CarouselSection = () => {
                   <div className="row1 flex-col-reverse md:flex-row max-w-[100%]  items-center  justify-center">
                     <div className="col-12 md:max-w-[58.333333%]  flex md:flex-col  flex-col-reverse  ">
                       <div className="pt-[24px] md:pt-0">
-                        <div className="mdText font-bold  ">
+                        <div className="text-[16px] font-bold  leading-[24px]">
                           Sinead Connelly
                         </div>
-                        <div className="smText text-[#444444] leading-[22px] font-normal">
+                        <div className="text-[14px] text-[#444444] leading-[22px] font-normal">
                           Co-founder and Director, Lotus People
                         </div>
                       </div>
@@ -61,7 +61,7 @@ const CarouselSection = () => {
                       <div className="max-w-[42px] max-h-[32px] mt-[32px]">
                         <img src={commaIcon} className="" alt="quotesIcon" />
                       </div>
-                      <div className=" smText font-light leading-[36px] text-[#000000] mt-[16px]   ">
+                      <div className="text-[20px] leading-[28px] md:text-[24px] font-light md:leading-[36px] text-[#000000] mt-[16px]   ">
                         I couldn’t recommend Sophie’s book more. As an
                         inexperienced recruitment consultant over ten years ago,
                         I leant on Sophie’s guidance and advice shared in this
@@ -73,7 +73,7 @@ const CarouselSection = () => {
                         consultant! With solid tips,...
                       </div>
                       <div className="row1 items-center  pt-[41px]">
-                        <div className="pl-[20px]">
+                        <div className="pl-[20px] hidden md:block">
                           <a
                             href="#"
                             className="text-black underline pt-[41px]"
@@ -97,10 +97,10 @@ const CarouselSection = () => {
                   <div className="row1 flex-col-reverse md:flex-row max-w-[100%]  items-center  justify-center">
                     <div className="col-12 md:max-w-[58.333333%]  flex md:flex-col  flex-col-reverse  ">
                       <div className="pt-[24px] md:pt-0">
-                        <div className="mdText font-bold  ">
+                        <div className="text-[16px] font-bold  leading-[24px]">
                           Sinead Connelly
                         </div>
-                        <div className="smText text-[#444444] leading-[22px] font-normal">
+                        <div className="text-[14px] text-[#444444] leading-[22px] font-normal">
                           Co-founder and Director, Lotus People
                         </div>
                       </div>
@@ -109,7 +109,7 @@ const CarouselSection = () => {
                       <div className="max-w-[42px] max-h-[32px] mt-[32px]">
                         <img src={commaIcon} className="" alt="quotesIcon" />
                       </div>
-                      <div className=" text-[24px] font-light leading-[36px] text-[#000000] mt-[16px]   ">
+                      <div className="text-[20px] leading-[28px] md:text-[24px] font-light md:leading-[36px] text-[#000000] mt-[16px]   ">
                         I couldn’t recommend Sophie’s book more. As an
                         inexperienced recruitment consultant over ten years ago,
                         I leant on Sophie’s guidance and advice shared in this
@@ -121,7 +121,7 @@ const CarouselSection = () => {
                         consultant! With solid tips,...
                       </div>
                       <div className="row1 items-center  pt-[41px]">
-                        <div className="pl-[20px]">
+                        <div className="pl-[20px] hidden md:block">
                           <a
                             href="#"
                             className="text-black underline pt-[41px]"
@@ -145,10 +145,10 @@ const CarouselSection = () => {
                   <div className="row1 flex-col-reverse md:flex-row max-w-[100%]  items-center  justify-center">
                     <div className="col-12 md:max-w-[58.333333%]  flex md:flex-col  flex-col-reverse  ">
                       <div className="pt-[24px] md:pt-0">
-                        <div className="mdText font-bold  ">
+                        <div className="text-[16px] font-bold  leading-[24px]">
                           Sinead Connelly
                         </div>
-                        <div className="smText text-[#444444] leading-[22px] font-normal">
+                        <div className="text-[14px] text-[#444444] leading-[22px] font-normal">
                           Co-founder and Director, Lotus People
                         </div>
                       </div>
@@ -157,7 +157,7 @@ const CarouselSection = () => {
                       <div className="max-w-[42px] max-h-[32px] mt-[32px]">
                         <img src={commaIcon} className="" alt="quotesIcon" />
                       </div>
-                      <div className=" smText font-light leading-[36px] text-[#000000] mt-[16px]   ">
+                      <div className="text-[20px] leading-[28px] md:text-[24px] font-light md:leading-[36px] text-[#000000] mt-[16px]   ">
                         I couldn’t recommend Sophie’s book more. As an
                         inexperienced recruitment consultant over ten years ago,
                         I leant on Sophie’s guidance and advice shared in this
@@ -169,7 +169,7 @@ const CarouselSection = () => {
                         consultant! With solid tips,...
                       </div>
                       <div className="row1 items-center  pt-[41px]">
-                        <div className="pl-[20px]">
+                        <div className="pl-[20px] hidden md:block">
                           <a
                             href="#"
                             className="text-black underline pt-[41px]"
@@ -193,10 +193,10 @@ const CarouselSection = () => {
                   <div className="row1 flex-col-reverse md:flex-row max-w-[100%]  items-center  justify-center">
                     <div className="col-12 md:max-w-[58.333333%]  flex md:flex-col  flex-col-reverse  ">
                       <div className="pt-[24px] md:pt-0">
-                        <div className="mdText font-bold  ">
+                        <div className="text-[16px] font-bold  leading-[24px]">
                           Sinead Connelly
                         </div>
-                        <div className="smText text-[#444444] leading-[22px] font-normal">
+                        <div className="text-[14px] text-[#444444] leading-[22px] font-normal">
                           Co-founder and Director, Lotus People
                         </div>
                       </div>
@@ -205,7 +205,7 @@ const CarouselSection = () => {
                       <div className="max-w-[42px] max-h-[32px] mt-[32px]">
                         <img src={commaIcon} className="" alt="quotesIcon" />
                       </div>
-                      <div className=" smText font-light leading-[36px] text-[#000000] mt-[16px]   ">
+                      <div className="text-[20px] leading-[28px] md:text-[24px] font-light md:leading-[36px] text-[#000000] mt-[16px]   ">
                         I couldn’t recommend Sophie’s book more. As an
                         inexperienced recruitment consultant over ten years ago,
                         I leant on Sophie’s guidance and advice shared in this
@@ -217,7 +217,7 @@ const CarouselSection = () => {
                         consultant! With solid tips,...
                       </div>
                       <div className="row1 items-center  pt-[41px]">
-                        <div className="pl-[20px]">
+                        <div className="pl-[20px] hidden md:block">
                           <a
                             href="#"
                             className="text-black underline pt-[41px]"

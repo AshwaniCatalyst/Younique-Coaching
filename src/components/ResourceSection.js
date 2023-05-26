@@ -21,9 +21,9 @@ const ResourceSection = () => {
             </div>
             <div className="  col-12 md:max-w-[58.333333%] mt-[24px] md:mt-0  flex justify-center md:justify-normal items-center  ">
               <div className="  flex flex-col  max-w-[416px] md:ml-[32px]">
-              <div className="smText font-bold">BOOK</div>
-              <h3 className="mt-[22px] self-stretch text-[40px] font-black leading-[48px]">Secrets To Running A Lucrative Temp Desk</h3>
-              <div className="smText font-normal text-[#444444] mt-[8px]">By Sophie Robertson (Author) </div>
+              <div className="text-[14px] leading-[22px] font-bold">BOOK</div>
+              <h3 className="mt-[22px] self-stretch text-[32px] leading-[40px]  md:text-[40px] font-black md:leading-[48px]">Secrets To Running A Lucrative Temp Desk</h3>
+              <div className="text-[14px] leading-[22px] font-normal text-[#444444] mt-[8px]">By Sophie Robertson (Author) </div>
               <div className="mdText font-normal self-stretch text-[#444444] pt-[16px] ">In this comprehensive book full of real-life case studies and based on many years of personal experience and success, Sophie Robertson outlines the processes involved in running a highly lucrative temp desk, which will both strengthen your client relationships and ensure you become the employer of choice for top-quality temps.</div>
               <button className="border-2 hover:bg-[#F03023] hover:text-[#ffffff] hover:border-[#f03023] border-black 
               pt-[13px] pb-[13px] pl-[30px] pr-[30px] max-w-full md:max-w-[180px] md:max-h-[48px] leading-[24px] md:leading-[22px] text-[14px] font-bold 
