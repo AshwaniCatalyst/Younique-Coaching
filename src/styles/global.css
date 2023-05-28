@@ -480,7 +480,7 @@ animation: fadeInRight 1s ease-in-out forwards;
   transition: 0.3s all ease-in-out;
 }
 
-.HoverMenu a:hover .arrowDown{
+ .HoverMenu:hover .arrowDown{
   /* transition: 0.3s all ease-in-out; */
   /* color: #f03023; */
   /* fill: #f03023; */
