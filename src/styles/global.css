@@ -481,13 +481,7 @@ animation: fadeInRight 1s ease-in-out forwards;
 }
 
  .HoverMenu:hover .arrowDown{
-  /* transition: 0.3s all ease-in-out; */
-  /* color: #f03023; */
-  /* fill: #f03023; */
-  /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); */
   transform: rotate(180deg);
-  
-
 }
 
  
