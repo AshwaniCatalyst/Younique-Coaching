@@ -501,7 +501,10 @@ animation: fadeInRight 1s ease-in-out forwards;
 .HoverMenu:hover .servicesSubMenu li,
 .HoverMenu:hover .resourceSubMenu li{
   /* height: 100%; */
+  /* transition: 0.3s all ease-in-out, opacity 0.3s ease-in-out; */
   visibility: visible;
+  /* width: 100%; */
+  opacity: 1;
 }
 
 .servicesSubMenu,
@@ -523,10 +526,11 @@ animation: fadeInRight 1s ease-in-out forwards;
 .resourceSubMenu li {
   margin: 0;
   padding-left: 16px;
-  width: 100%;
+  /* width: 0%; */
+  opacity: 0;
   border-bottom: 1px solid #e6e6e6;
   padding: 12px 16px;
-  /* transition: 0.3s all ease-in-out; */
+  
   visibility: hidden;
   
 }
@@ -547,6 +551,20 @@ animation: fadeInRight 1s ease-in-out forwards;
 .resourceSectionImage {
   padding: 50px 72px;
   background: #f5f5f5;
+}
+
+.resourceBtn{
+  transition: 0.3s all ease-in-out;
+  border: 2px solid #000000;
+  background: #fff;
+  color: #000000;
+}
+
+.resourceBtn:hover{
+  border:2px solid #f03023;
+  background: #f03023;
+  color: #fff;
+
 }
 
 .tabs img {
