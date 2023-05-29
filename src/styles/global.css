@@ -521,7 +521,6 @@ animation: fadeInRight 1s ease-in-out forwards;
 .resourceSubMenu li {
   margin: 0;
   padding-left: 16px;
-  /* width: 0%; */
   opacity: 0;
   transition-delay: 0.2s;
   border-bottom: 1px solid #e6e6e6;
