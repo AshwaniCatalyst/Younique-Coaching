@@ -57,7 +57,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a href="" className="text-[#000000]">
-                    About
+                    About Web
                   </a>
                 </li>
                 <li className="flex items-center gap-[6px] HoverMenu">
