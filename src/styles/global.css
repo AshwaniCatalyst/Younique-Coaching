@@ -496,6 +496,7 @@ animation: fadeInRight 1s ease-in-out forwards;
 .HoverMenu:hover .resourceSubMenu li{
   /* height: 100%; */
   /* transition: 0.3s all ease-in-out, opacity 0.3s ease-in-out; */
+  /* transition-delay: 0.2s ; */
   visibility: visible;
   /* width: 100%; */
   opacity: 1;
@@ -522,6 +523,7 @@ animation: fadeInRight 1s ease-in-out forwards;
   padding-left: 16px;
   /* width: 0%; */
   opacity: 0;
+  transition-delay: 0.2s;
   border-bottom: 1px solid #e6e6e6;
   padding: 12px 16px;
   
