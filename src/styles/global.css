@@ -257,7 +257,7 @@ animation: fadeInRight 1s ease-in-out forwards;
   /* cursor: pointer; */
   /* padding: 29px 0; */
   /* border: 2px solid red; */
-  margin: 0 12px;
+  margin: 15px 12px;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -275,7 +275,7 @@ animation: fadeInRight 1s ease-in-out forwards;
   min-height: 48px;
 }
 .upNav li {
-  padding: 6px 16px;
+  padding: 6px 0;
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -396,7 +396,24 @@ animation: fadeInRight 1s ease-in-out forwards;
   position: relative;
 }
 
-.heroSection::before , .mobileHeroSection::before {
+.mobileHeroSection::before{
+  position: absolute;
+  content: "";
+  background: #f9f3dc;
+  height: 100%;
+  width: 100vw;
+  max-width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left:-50vw ;
+  margin-right: -50vw;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  /* border: 2px solid green; */
+}
+
+.heroSection::before  {
   content: "";
   background: #f9f3dc;
   max-width: 1040px;
@@ -488,7 +505,8 @@ animation: fadeInRight 1s ease-in-out forwards;
 
 .HoverMenu:hover .servicesSubMenu,
 .HoverMenu:hover .resourceSubMenu {
-  height: 335%;
+  height: 370%;
+  transform: scaleY(100%);
   visibility:visible;
 }
 
@@ -506,14 +524,16 @@ animation: fadeInRight 1s ease-in-out forwards;
 .resourceSubMenu {
   position: absolute;
   left: 0;
-  top: 120%;
+  top: 130%;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
-  width: auto;
+  width: 100%;
   min-width: 180px;
   z-index: 999;
   visibility: hidden;
   background: #fff;
-  height: 0%;
+  /* height: 0%; */
+  transform: scaleY(0);
+  transform-origin:top center;
   transition: 0.3s all ease-in-out;
   
 }
@@ -663,8 +683,20 @@ position: fixed;
     padding-left: 16px;
     padding-right: 16px;
   }
-
-  
+  .mobileHeroSection{
+   
+    height: auto;
+    /* bottom: 0; */
+    margin: 0;
+    width: 100vw;
+    /* border: 2px solid blue; */
+    
+   
+  }
+  .heroSection::before {
+    max-height: 0% !important;
+    bottom: 0 !important;
+  }
 }
 
 @media (min-width: 576px) {
@@ -676,10 +708,11 @@ position: fixed;
     bottom: 0 !important;
   }
   
-  .mobileHeroSection::before{
+  .mobileHeroSection{
    
-    max-height: 100%;
-    bottom: 0;
+    width: 100vw;
+    /* border: 2px solid blue; */
+    
    
   }
   
@@ -764,10 +797,12 @@ position: fixed;
   min-width: 60px;
   }
   .navLinks{
-    margin: 0;
+    /* margin: 28px 0px; */
+    /* border: 2px solid red; */
   }
   .navLinks li{
-    margin: 8px;
+    margin:8px 6px;
+    /* border: 2px solid red; */
   }
 }
 @media (min-width: 1200px) {
@@ -781,11 +816,21 @@ position: fixed;
     min-height: 48px;
   min-width: 120px;
   }
+  .navLinks li{
+    margin: 10px 8px;
+
+    /* border: 2px solid red; */
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .heroSection::before,
   .carouselSection::before {
     max-width: 63% !important;
+  }
+  .navLinks li{
+    margin: 15px 12px;
+
+    /* border: 2px solid red; */
   }
 }

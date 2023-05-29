@@ -17,15 +17,15 @@ const Navbar = () => {
       <div className="hidden  lg:block bg-[#000000] text-[#ffffff]">
         <div className="container">
           <div className="pr-[64px] pt-[6px] pb-[6px] ">
-            <ul className=" flex justify-end upNav ">
-              <li>
-                <a>+ 61 448 173 307</a>
+            <ul className=" flex justify-end upNav text-[12px] leading-[20px] font-bold ">
+              <li className="after:mr-[16px]">
+                <a href="">+ 61 448 173 307</a>
               </li>
-              <li className="border-l border-r">
-                <a> sophie@youniquecoaching.com.au</a>
+              <li className="before:border-l before:opacity-[0.3] before:pl-[16px] pr-0 after:mr-[16px]">
+                <a href=""> sophie@youniquecoaching.com.au</a>
               </li>
-              <li>
-                <a>Request a Demo</a>
+              <li className="before:border-l before:opacity-[0.3] before:pr-[16px]">
+                <a href="">Request a Demo</a>
               </li>
             </ul>
           </div>
@@ -35,15 +35,15 @@ const Navbar = () => {
         className=" w-full    "
         style={{ borderBottom: "1px solid #E6E6E6" }}
       >
-        <div className=" container     flex  ">
-          <div className="hidden   justify-between lg:flex items-center m-0   w-full ">
-            <div className=" col-2    ">
+        <div className=" container     flex  justify-center  ">
+          <div className="hidden    lg:flex items-center row1  w-full">
+            <div className=" col-2 p-0  ">
               <div className="  max-w-[133.17px] h-[34px]   ">
                 <img src={navLogo} className="" alt="logo" />
               </div>
             </div>
-            <div className="lg:max-w-[83.333333%]  hidden lg:flex  items-end z-[100]  ">
-              <ul className="  hidden lg:flex text-[#000000]     items-center  navLinks">
+            <div className="col-10 p-0 w-full    hidden lg:flex justify-end items-end z-[100]  ">
+              <ul className="  hidden lg:flex text-[#000000]  items-center  navLinks">
                 <li className="p-0">
                   <a>
                     <IconButton>
@@ -60,8 +60,8 @@ const Navbar = () => {
                     About
                   </a>
                 </li>
-                <li className="flex items-center gap-[6px] HoverMenu">
-                  <a className="flex items-center gap-2 text-[#000000]  ">
+                <li className="flex items-center  HoverMenu">
+                  <a className="flex items-center gap-[6px] text-[#000000]  ">
                     Services
                     <img
                       src={chevron}
@@ -83,7 +83,7 @@ const Navbar = () => {
                   </ul>                  
                 </li>
 
-                <li className="flex items-center gap-[6px] relative  HoverMenu ">
+                <li className="flex items-center  relative  HoverMenu ">
                   <a className="flex items-center  gap-[6px] text-[#000000]">
                     {" "}
                     Resources{" "}
@@ -119,10 +119,10 @@ const Navbar = () => {
                     Contact Us
                   </a>
                 </li>
-                <li className=" ml-[25px] mr-[25px]  navbarBorder">
-                  <a className="flex gap-2 text-[#000000] hover:text-[#F03023]">
+                <li className="    ">
+                  <a className="flex lg:gap-[9.02px]  text-[#000000] hover:text-[#F03023] ">
                     {" "}
-                    <img src={cartIcon} alt="cart" /> 0
+                    <img src={cartIcon} alt="cart" className="border-l lg:pl-[25px]" /><div className="border-r lg:pr-[25px]">0</div>
                   </a>
                 </li>
                 <li>
@@ -147,7 +147,7 @@ const Navbar = () => {
                   <img src={mobileNavLogo} alt="logo" />
                 </div>
               </div>
-              <div className="col-2   pb-[30px]  ">
+              <div className="col-2   p-0   ">
                 <div
                   id="nav-icon4"
                   onClick={() => handleClick()}

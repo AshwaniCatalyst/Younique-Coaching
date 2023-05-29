@@ -17,21 +17,21 @@ const ClientReviewSection = () => {
   return (
     <>
       <div className="container flex justify-center ">
-        <div className="row1 w-full  pb-[60px] md:pb-[154px] ">
-          <div className="p-[10px] text-[36px] leading-[44px]   md:text-[56px] lg:ml-[113px]  font-light md:leading-[64px] mb-[30px] max-w-[304px] md:max-w-[653px] ">
+        <div className="row1  w-full  pb-[60px] md:pb-[154px] ">
+        <div className="p-[10px] text-[36px] leading-[44px]   md:text-[56px] lg:ml-[113px]  font-light md:leading-[64px] mb-[30px] max-w-[304px] md:max-w-[653px] ">
             <h2 className=" title-border before:bg-[#000000]  ">
               What Our Clients Say About
               <span className="font-black inline-block"> Younique Coaching</span>
             </h2>
           </div>
-          <div className="col-11   ">
+          <div className="col-11  p-0  ">
             <div
               className={
                 toggleState === 1 ? "content active-content" : "content"
               }
             >
               <div className=" flex flex-col md:flex-row ">
-                <div className=" col-12 md:max-w-[25%] pr-[40px]  ">
+                <div className=" col-12 md:max-w-[25%] pr-[40px]  p-0 ">
                   <div className=" h-auto max-w-[160px] md:max-w-[304px] rounded-full md:rounded-none ">
                   <img
                     src={enlargedCustomer1}
@@ -40,7 +40,7 @@ const ClientReviewSection = () => {
                   />
                   </div>
                 </div>
-                <div className="col-12 md:max-w-[75%]   flex  flex-col-reverse md:flex-col   ">
+                <div className="col-12 md:max-w-[75%] md:pl-[80px] pl-0 md:pr-[80px] pr-0  flex  flex-col-reverse md:flex-col   ">
                   <div className=" pt-[24px] md:pt-0">
                     <p className="text-black font-bold">Jacob Hawkins</p>
                     <div className="sm text-[#444444]">
@@ -81,7 +81,7 @@ const ClientReviewSection = () => {
               }
             >
               <div className=" flex flex-col md:flex-row ">
-                <div className="col-12 md:max-w-[25%] pr-[40px]">
+                <div className="col-12 md:max-w-[25%] pr-[40px] p-0">
                 <div className="h-auto max-w-[160px] md:max-w-[304px] rounded-full md:rounded-none ">
                 <img
                     src={enlargedCustomer2}
@@ -91,7 +91,7 @@ const ClientReviewSection = () => {
                 </div>
                   
                 </div>
-                <div className="col-12 md:max-w-[75%]   flex  flex-col-reverse md:flex-col">
+                <div className="col-12 md:max-w-[75%] md:pl-[80px] pl-0 md:pr-[80px] pr-0 flex  flex-col-reverse md:flex-col">
                   <div className=" pt-[24px] md:pt-0">
                   <p className="text-black font-bold">Richard Fimmano</p>
                   <div className="sm text-[#444444]">
@@ -130,7 +130,7 @@ const ClientReviewSection = () => {
               }
             >
               <div className="flex flex-col md:flex-row ">
-                <div className="col-12 md:max-w-[25%] pr-[40px]">
+                <div className="col-12 md:max-w-[25%] pr-[40px] p-0">
                 <div className="h-auto max-w-[160px] md:max-w-[304px] rounded-full md:rounded-none ">
                 <img
                     src={enlargedCustomer3}
@@ -140,7 +140,7 @@ const ClientReviewSection = () => {
                 </div>
                   
                 </div>
-                <div className="col-12 md:max-w-[75%]   flex  flex-col-reverse md:flex-col">
+                <div className="col-12 md:max-w-[75%] md:pl-[80px] pl-0 md:pr-[80px] pr-0 flex  flex-col-reverse md:flex-col">
                   <div className=" pt-[24px] md:pt-0">
                   <p className="text-black font-bold">Kate Rowe</p>
                   <div className="sm text-[#444444]">
@@ -179,7 +179,7 @@ const ClientReviewSection = () => {
               }
             >
               <div className="flex  flex-col md:flex-row">
-                <div className="col-12 md:max-w-[25%] pr-[40px]">
+                <div className="col-12 md:max-w-[25%] pr-[40px] p-0">
                 <div className="h-auto max-w-[160px] md:max-w-[304px] rounded-full md:rounded-none ">
                 <img
                     src={enlargedCustomer4}
@@ -189,7 +189,7 @@ const ClientReviewSection = () => {
                 </div>
                   
                 </div>
-                <div className="col-12 md:max-w-[75%]   flex  flex-col-reverse md:flex-col">
+                <div className="col-12 md:max-w-[75%] md:pl-[80px] pl-0 md:pr-[80px] pr-0 flex  flex-col-reverse md:flex-col">
                   <div className=" pt-[24px] md:pt-0">
                   <p className="text-black font-bold">Michelle Barrett</p>
                   <div className="sm text-[#444444]">
@@ -224,14 +224,14 @@ const ClientReviewSection = () => {
             </div>
           </div>
 
-          <div className="col-1 flex-col hidden md:flex">
+          <div className=" flex-col hidden md:flex items-center p-0 ">
             <div
-              className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+              className={toggleState === 1 ? "tabs active-tabs " : "tabs"}
               onClick={() => toggleTab(1)}
             >
               <img
                 src={microImg1}
-                className="cursor-pointer h-auto max-w-[60px] pb-[16px]"
+                className="cursor-pointer h-auto max-w-[60px] mb-[16px]"
                 alt="customer1"
               />
             </div>
@@ -241,7 +241,7 @@ const ClientReviewSection = () => {
             >
               <img
                 src={microImg2}
-                className="cursor-pointer h-auto max-w-[60px] pb-[16px]"
+                className="cursor-pointer h-auto max-w-[60px] mb-[16px]"
                 alt="customer 2"
               />
             </div>
@@ -251,7 +251,7 @@ const ClientReviewSection = () => {
             >
               <img
                 src={microImg3}
-                className="cursor-pointer h-auto max-w-[60px] pb-[16px]"
+                className="cursor-pointer h-auto max-w-[60px] mb-[16px]"
                 alt="customer 3"
               />
             </div>
