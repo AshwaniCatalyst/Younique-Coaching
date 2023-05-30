@@ -505,7 +505,7 @@ animation: fadeInRight 1s ease-in-out forwards;
 
 .HoverMenu:hover .servicesSubMenu,
 .HoverMenu:hover .resourceSubMenu {
-  height: 370%;
+  height: 305%;
   transform: scaleY(100%);
   visibility:visible;
 }
@@ -531,10 +531,11 @@ animation: fadeInRight 1s ease-in-out forwards;
   z-index: 999;
   visibility: hidden;
   background: #fff;
+  padding: 0;
   /* height: 0%; */
   transform: scaleY(0);
   transform-origin:top center;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out; 
   
 }
 .servicesSubMenu li,
@@ -544,7 +545,10 @@ animation: fadeInRight 1s ease-in-out forwards;
   opacity: 0;
   transition-delay: 0.2s;
   border-bottom: 1px solid #e6e6e6;
-  padding: 12px 16px;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  /* border: 2px solid green; */
   
   visibility: hidden;
   
@@ -697,6 +701,9 @@ position: fixed;
     max-height: 0% !important;
     bottom: 0 !important;
   }
+  .tiltedContainer::after{
+    top: 0;
+  }
 }
 
 @media (min-width: 576px) {
@@ -714,6 +721,10 @@ position: fixed;
     /* border: 2px solid blue; */
     
    
+  }
+
+  .tiltedContainer::after{
+    top: 0;
   }
   
   .col-1 {
@@ -786,6 +797,9 @@ position: fixed;
     max-height: 100% !important;
     bottom: 0 !important;
   }
+  .tiltedContainer::after{
+    top: 120px;
+  }
 
 }
 @media (min-width: 992px) {
@@ -804,6 +818,10 @@ position: fixed;
     margin:8px 6px;
     /* border: 2px solid red; */
   }
+  .servicesSubMenu li,
+.resourceSubMenu li {
+  margin: 0;
+}
 }
 @media (min-width: 1200px) {
   .container {
@@ -821,6 +839,10 @@ position: fixed;
 
     /* border: 2px solid red; */
   }
+  .servicesSubMenu li,
+.resourceSubMenu li {
+  margin: 0;
+}
 }
 
 @media screen and (min-width: 1440px) {
@@ -833,4 +855,8 @@ position: fixed;
 
     /* border: 2px solid red; */
   }
+  .servicesSubMenu li,
+.resourceSubMenu li {
+  margin: 0;
+}
 }

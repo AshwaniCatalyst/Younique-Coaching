@@ -171,7 +171,7 @@ const CarouselSection = () => {
                       <div className="row1 items-center  pt-[41px]">
                         <div className="pl-[20px] hidden md:block">
                           <a
-                            href="#"
+                            href=""
                             className="text-black underline pt-[41px]"
                           >
                             Read more
@@ -219,7 +219,7 @@ const CarouselSection = () => {
                       <div className="row1 items-center  pt-[41px]">
                         <div className="pl-[20px] hidden md:block">
                           <a
-                            href="#"
+                            href=""
                             className="text-black underline pt-[41px]"
                           >
                             Read more

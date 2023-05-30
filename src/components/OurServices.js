@@ -6,7 +6,7 @@ import crd4 from "../images/c4.svg";
 const OurServices = () => {
   return (
     <>
-      <div className="tiltedContainer before:hidden md:before:block md:before:bg-[#F5F5F5] after:bg-[#F5F5F5] after:h-[calc(100%-120px)] mb-[60px] pt-[120px]   md:mb-[160px]">
+      <div className="tiltedContainer before:m-0 before:hidden md:before:block md:before:bg-[#F5F5F5] after:bg-[#F5F5F5] after:h-full md:after:h-[calc(100%-120px)] mb-[60px]  md:pt-[120px]   md:mb-[160px]">
         <div className="container  ">
           <div className="row1 pt-[60px] pb-[60px] md:pb-[120px]  md:pt-0 flex-col   ">
             <div className=" max-w-[138px] md:max-w-[263px] pb-[30px] md:ml-[112px]">
@@ -23,12 +23,12 @@ const OurServices = () => {
                   <img src={crd1} alt="card-Image" />
                   </div>
                   <h5 className="pt-[16px] pb-[8px]">MasterClass</h5>
-                  <p className="min-h-[160px] text-[#444444]">
+                  <p className="h-auto md:min-h-[160px] text-[#444444] mb-[24px] md:mb-0">
                     Workshops where you can learn the tips and tools to be
                     successful
                   </p>
                 
-                <a href="#" className="hover:text-[#000000] underline font-semibold  text-[#F03023]">
+                <a href="#" className="hover:text-[#000000] underline font-semibold   text-[#F03023]">
                   
                     Learn More
                   
@@ -41,7 +41,7 @@ const OurServices = () => {
                   <img src={crd2} alt="card-Image" />
                   </div>
                   <h5 className="pt-[16px] pb-[8px] ">Coaching / Mentoring</h5>
-                  <p className="min-h-[160px] text-[#444444]">
+                  <p className="h-auto md:min-h-[160px] text-[#444444] mb-[24px] md:mb-0">
                     One on one coaching to accelerate and cement your insights
                     and learnings for rapid results
                   </p>
@@ -60,7 +60,7 @@ const OurServices = () => {
                   <img src={crd3} alt="card-Image" />
                   </div>
                   <h5 className="pt-[16px] pb-[8px]">Training</h5>
-                  <p className=" min-h-[160px] text-[#444444]">
+                  <p className=" h-auto md:min-h-[160px] text-[#444444] mb-[24px] md:mb-0">
                     Group bespoke training delivered via face-to-face or
                     virtually
                   </p>
@@ -77,7 +77,7 @@ const OurServices = () => {
                   <img src={crd4} alt="card-Image" />
                   </div>
                   <h5 className="pt-[16px] pb-[8px]">Advisory </h5>
-                  <p className="min-h-[160px] text-[#444444] ">
+                  <p className="h-auto md:min-h-[160px] text-[#444444] mb-[24px] md:mb-0">
                     You may be a start up or an established company looking for
                     particular expertise on your Board or you may want someone
                     to bounce ideas off as running a business can be a lonely

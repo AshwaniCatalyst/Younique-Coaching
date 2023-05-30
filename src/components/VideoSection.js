@@ -5,7 +5,7 @@ const VideoSection = () => {
       <div className="tiltedContainer   before:hidden md:before:block md:before:bg-[#F03023] after:bg-[#F03023] after:min-h-[100%] overflow-hidden md:after:min-h-[calc(100%-230px)] ">
         <div className="container  ">
           <div>
-          <div className="row1 text-white   pt-[170px]   md:pt-[120px]">
+          <div className="row1 text-white  pt-[70px]  md:pt-[120px]">
             <div className="hidden md:flex col-4"></div>
             <div className="col-8">
               <div className="pb-[40px] max-w-[304px] md:max-w-[491px]">
@@ -53,7 +53,7 @@ const VideoSection = () => {
           <div className="row1">
           <div className=" col-4 hidden md:flex"></div>
           <div className="col-12 md:max-w-[66.666667%]   ">
-            <div className="bg-[rgb(240,48,35)]    w-full">
+            <div className="bg-[rgb(240,48,35)]  pb-[60px] md:pb-0  w-full">
               <ul className="   video-info-col sm:before:hidden md:items-center md:before:border-opacity-[0.3] items-start flex-col md:flex-row">
                 <li className="before:opacity-0 text-center">
                 <h3 className="text-[40px] leading-[48px] mb-[4px] font-black">15</h3>
